@@ -17,8 +17,9 @@ h1 {
 li{
     display: list-item;
     font-size: 1.5em
-    text-align: -webkit-match-parent;
-    vertical-align: middle;
+    text-align: left;
+
+
 
 }
 legend{
