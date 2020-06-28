@@ -4,7 +4,7 @@ h1 {
     font-size: 2em;
     border-style: outset;
 
-    border-left-style: ;
+    margin-left: 20px;
     border-color: dimgrey;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
@@ -24,4 +24,8 @@ li{
 }
 legend{
     font-size: 19px;
+
+}
+ol{
+    margin-left: auto;
 }
