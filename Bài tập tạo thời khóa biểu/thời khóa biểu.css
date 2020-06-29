@@ -1,0 +1,29 @@
+table{
+    width: 100%;
+}
+
+h1{text-align: center}
+td,th{
+
+    border: 1px solid black;
+}
+.left1{
+    margin-left:20px;
+    text-align: left;
+}
+.right1{
+    margin-right: 20px;
+    text-align: right;
+    float: right;
+}
+th{
+    background-color: yellow;
+    font-weight: bold;
+}
+#monhoc{text-align: center}
+
+.maucam{
+    background-color: orange;
+    font-weight: bold;
+
+}

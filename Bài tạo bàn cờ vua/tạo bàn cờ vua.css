@@ -1,0 +1,25 @@
+table{
+    width: 100%;
+
+
+}
+td{
+    border: dashed;
+
+
+}
+.cottrai{
+    text-align: right;
+    padding-bottom: 90px;
+}
+
+.thut:nth-child(odd){
+    background-color: black;
+}
+.thoi:nth-child(even){
+    background-color: black;
+}
+html{
+    background-color: orange;
+}
+table{background-color: white}
