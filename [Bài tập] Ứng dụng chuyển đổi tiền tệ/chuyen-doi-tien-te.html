@@ -4,33 +4,40 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
+
 </head>
 <body>
+<div>
+    <label>Amount</label>
+    <input id="amount" type="number" min="1"/>
+</div>
 
-<label>Amount</label>
-<input type="number" min="1">
-
-<label>From Currency</label>
-<select>
+<div>
+    <label>From Currency</label>
+    <select>
     <option>
         <label>VND</label>
     </option>
     <option>
         <label>USD</label>
     </option>
-</select>
+    </select>
+</div>
+<div>
 
-<label>To Currency</label>
-<select>
-    <option>
+    <label>To Currency</label>
+    <select>
+        <option>
         <label>USD</label>
-    </option>
-    <option>
+        </option>
+        <option>
         <label>VND</label>
-    </option>
-</select>
+        </option>
+    </select>
+</div>
 
-<button type="button" >
+<button type="button" onclick="convert()">Convert</button>
+
 
 
 
