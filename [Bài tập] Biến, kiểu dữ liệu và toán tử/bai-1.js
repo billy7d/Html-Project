@@ -6,8 +6,8 @@ let v = parseFloat(vatly);
 let h = parseFloat(hoahoc);
 let s = parseFloat(sinhhoc);
 
-let tong = v + h + s;
-let tb = (v+ h + s)/3;
 
-document.write("tong diem cua 3 mon la: " + tong);
-document.write("tong diem trung binh la: " + tb);
+
+document.write("tong diem cua 3 mon la: " + (v + h + s));
+document.write("<br/>");
+document.write("tong diem trung binh la: " + [(v + h + s)/3]);
