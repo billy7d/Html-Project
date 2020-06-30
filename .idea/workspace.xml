@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="" />
+    <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Bài tập] Ứng dụng chuyển đổi tiền tệ/chuyen-doi-tien-te.html" beforeDir="false" afterPath="$PROJECT_DIR$/[Bài tập] Ứng dụng chuyển đổi tiền tệ/chuyen-doi-tien-te.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Bài tập] Ứng dụng chuyển đổi tiền tệ/chuyen-doi-tien-te.js" beforeDir="false" afterPath="$PROJECT_DIR$/[Bài tập] Ứng dụng chuyển đổi tiền tệ/chuyen-doi-tien-te.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +24,24 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Html-Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="chuyen-doi-tien-te.js" type="NodeJSConfigurationType" temporary="true" path-to-node="node" nameIsGenerated="true" path-to-js-file="chuyen-doi-tien-te.js" working-dir="$PROJECT_DIR$/[Bài tập] Ứng dụng chuyển đổi tiền tệ">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.chuyen-doi-tien-te.js" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1593440141497</updated>
       <workItem from="1593440142654" duration="204000" />
+      <workItem from="1593521996900" duration="5024000" />
     </task>
     <servers />
   </component>
@@ -41,9 +62,21 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="979" y="182" key="#chuyen-doi-tien-te.js" timestamp="1593527071536">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="979" y="182" key="#chuyen-doi-tien-te.js/0.0.1920.1040@0.0.1920.1040" timestamp="1593527071536" />
     <state x="1047" y="255" key="FileChooserDialogImpl" timestamp="1593440343920">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1047" y="255" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593440343920" />
+    <state x="-7" y="0" width="635" height="1047" key="dock-window-1" timestamp="1593522868092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-7" y="0" width="635" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1593522868092" />
+    <state x="986" y="332" key="jetbrains.nodejs.interpreters-dialog" timestamp="1593527067290">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="986" y="332" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593527067290" />
   </component>
 </project>
