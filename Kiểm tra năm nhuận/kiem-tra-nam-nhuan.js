@@ -1,18 +1,18 @@
+
+
+
 let year = parseInt(prompt("Enter a year"));
-let isLeapYear = false;
 
 if (year % 4 == 0) {
     if (year % 100 == 0) {
         if (year % 400 == 0) {
-            isLeapYear = true;
+            alert(year + " is a leap year");
+        } else {
+            alert(year + " is NOT a leap year");
         }
     } else {
-        isLeapYear = true;
+        alert(year + " is a leap year");
     }
-}
-
-if (isLeapYear) {
-    alert(year + " is a leap year");
 } else {
-    alert(year + " is NOT a leap year");h
+    alert(year + " is NOT a leap year");
 }
