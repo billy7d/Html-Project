@@ -6,7 +6,8 @@ if (username === "admin") {
         alert("Welcome!!");
         }   else if (password === "null"){
                 alert("Canceled");
-            }       alert("Wrong password");
+            }   else{
+                alert("Wrong password");}
 } else if(username === "null"){
     alert("Canceled");
 }       else {
