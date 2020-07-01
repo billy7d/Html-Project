@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<h1>Cacaculator</h1>
+<h1>Caculator</h1>
 
 <div>
     <input id="so1" type="number" name="numb"/>
@@ -14,15 +14,16 @@
 </div>
 
 <div>
-    <button id="phepcong" type="button" onclick="nhannut()">Addition(+)</button>
-    <button id="pheptru" type="button" onclick="nhannut()">Subtraction(-)</button>
-    <button id="phepnhan" type="button" onclick="nhannut()">Multiplication(+)</button>
-    <button id="phepchia" type="button" onclick="nhannut()">Division(/)</button>
+    <button  type="button" onclick="nhannut('cong')">Addition(+)</button>
+    <button  type="button" onclick="nhannut('tru')">Subtraction(-)</button>
+    <button  type="button" onclick="nhannut('nhan')">Multiplication(*)</button>
+    <button  type="button" onclick="nhannut('chia')">Division(/)</button>
 </div>
 
-<div id="result">
-    <lable>Result: </lable>
-</div>
+<p>Ket qua: <span id="raso">  </span></p>
+
+
+
 
 
 <script src="1-ham.js"></script>
