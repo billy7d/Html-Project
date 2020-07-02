@@ -1,0 +1,1 @@
+var so1 = parseFloat()

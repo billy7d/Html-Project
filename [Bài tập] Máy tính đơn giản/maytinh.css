@@ -1,0 +1,28 @@
+td{
+    width: 10px;
+    height: 10px;
+    padding: 5px;
+    margin: 10px;
+    border: solid green;
+    padding-top: 30px;
+
+    text-align: center;
+}
+th{
+
+    width: 100%;
+    padding-top: 15px;
+}
+table{
+    width: 40%;
+    margin-left: 400px;
+    border: solid;
+    border-spacing: 10px;
+}
+
+#display{
+    width: 97%;
+    height: 60px;
+    border: solid;
+    font-size: 50px;
+}
