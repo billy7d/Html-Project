@@ -10,32 +10,32 @@
 
 <table>
     <tr>
-        <th colspan="4"> <input type="text" name="display" id="display"> </th>
+        <th colspan="4"> <input type="text" name="display" id="display" disabled> </th>
     </tr>
     <div id="row">
         <tr>
-        <td id="but1" onclick="but1()">1</td>
-        <td id="but2" onclick="but2()">2</td>
-        <td id="but3" onclick="but3()">3</td>
-        <td id="but+" onclick="butcong()">+</td>
+        <td id="but1" onclick="numb('1')">1</td>
+        <td id="but2" onclick="numb('2')">2</td>
+        <td id="but3" onclick="numb('3')">3</td>
+        <td id="but+" onclick="ope('+')">+</td>
     </tr>
     <tr>
-        <td id="but4" onclick="but4()">4</td>
-        <td id="but5" onclick="but5()">5</td>
-        <td id="but6" onclick="but6()">6</td>
-        <td id="but-" onclick="buttru()">-</td>
+        <td id="but4" onclick="numb('4')">4</td>
+        <td id="but5" onclick="numb('5')">5</td>
+        <td id="but6" onclick="numb('6')">6</td>
+        <td id="but-" onclick="ope('-')">-</td>
     </tr>
     <tr>
-        <td id="but7" onclick="but7()">7</td>
-        <td id="but8" onclick="but8()">8</td>
-        <td id="but9" onclick="but9()">9</td>
-        <td id="butx" onclick="butnhan()">x</td>
+        <td id="but7" onclick="numb('7')">7</td>
+        <td id="but8" onclick="numb('8')">8</td>
+        <td id="but9" onclick="numb('9')">9</td>
+        <td id="butx" onclick="ope('*')">*</td>
     </tr>
     <tr>
-        <td id="butc" onclick="butc()">C</td>
-        <td id="but0" onclick="but0()">0</td>
-        <td id="but=" onclick="butbang()">=</td>
-        <td id="but/" onclick="butchia">/</td>
+        <td id="butc" onclick="del()">C</td>
+        <td id="but0" onclick="numb('0')">0</td>
+        <td id="but=" onclick="execute()">=</td>
+        <td id="but/" onclick="ope('/')">/</td>
     </tr>
     </div>
 

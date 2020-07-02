@@ -7,6 +7,7 @@ td{
     padding-top: 30px;
     font-weight: bold;
     text-align: center;
+    background-color: white;
 }
 th{
 
@@ -14,15 +15,17 @@ th{
     padding-top: 15px;
 }
 table{
-    width: 40%;
-    margin-left: 400px;
+    width: 20%;
+    margin-left: 600px;
     border: solid;
     border-spacing: 10px;
+    height: 500px;
+    background-color: beige;
 }
 
 #display{
     width: 97%;
-    height: 60px;
+    height: 100px;
     border: solid;
     font-size: 50px;
 }
