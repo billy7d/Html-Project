@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="nobita" src="images/nobita.jpg" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+
+<script>
+    function nhanlen() {
+        var element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) - 10 + "px";
+    }
+    function nhanxuong() {
+        var element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) + 10 + "px";
+    }
+    function nhantrai() {
+        var element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) - 10 + "px";
+    }
+    function nhanphai() {
+        var element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) + 10 +"px";
+    }
+
+    function moveSelect(mv) {
+        switch (mv.keycode) {
+            case 38:
+                nhanlen();
+                break;
+            case 40:
+                nhanxuong();
+                break;
+            case 37:
+                nhantrai();
+                break;
+            case 39:
+                nhanphai();
+                break;
+        }
+    }
+
+
+
+</script>
+
+</body>
+</html>
