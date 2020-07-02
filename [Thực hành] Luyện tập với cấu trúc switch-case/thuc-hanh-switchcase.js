@@ -1,21 +1,7 @@
-switch (browser) {
-        case "Edge":
-            alert("you've got the edge!");
-        break;
-        case "Chrome":
-        case "Firefox":
-        case "Safari":
-        case "Opera":
-            alert("Okay we support these browsers too");
-            break;
-
-            default:
-            alert("We hope that this page looks ok!");
-
-}
 
 
-let a = prompt('a?', '');
+
+let a = parseFloat(prompt('a?', ''));
 
 switch (a) {
     case 0:
@@ -26,7 +12,7 @@ switch (a) {
         break;
     case 2:
     case 3:
-        alert('2,3');
+        alert(2,3);
         break;
 }
 
