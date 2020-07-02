@@ -1,1 +1,1 @@
-var so1 = parseFloat()
+var so1 = parseFloat(document.getElementById("but1").value);
