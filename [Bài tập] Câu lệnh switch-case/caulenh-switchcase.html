@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input id="month" type="number"  min="1" max="12" style="width: 150px" />
+<button  type="submit" onclick="nhannut()">Tinh so ngay</button>
+
+
+<p>Thang <span id="ketqua"></span></p>
+
+<script>
+
+function nhannut() {
+    var a = parseFloat(document.getElementById("month").value);
+
+    switch (a) {
+        case 1:
+            document.getElementById("ketqua").innerHTML = "1 co 31 ngay";
+            break;
+        case 2:
+            document.getElementById("ketqua").innerHTML = "2 co 28 ngay";
+            break;
+        case 3:
+            document.getElementById("ketqua").innerHTML = "3 co 31 ngay";
+            break;
+        case 4:
+            document.getElementById("ketqua").innerHTML = "4 co 30 ngay";
+            break;
+        case 5:
+            document.getElementById("ketqua").innerHTML = "5 co 31 ngay";
+            break;
+        case 6:
+            document.getElementById("ketqua").innerHTML = "6 co 30 ngay";
+            break;
+        case 7:
+            document.getElementById("ketqua").innerHTML = "7 co 31 ngay";
+            break;
+        case 8:
+            document.getElementById("ketqua").innerHTML = "8 co 31 ngay";
+            break;
+        case 9:
+            document.getElementById("ketqua").innerHTML = "9 co 30 ngay";
+            break;
+        case 10:
+            document.getElementById("ketqua").innerHTML = "10 co 30 ngay";
+            break;
+        case 11:
+            document.getElementById("ketqua").innerHTML = "11 co 30 ngay";
+            break;
+        case 12:
+            document.getElementById("ketqua").innerHTML = "12 co 31 ngay";
+            break;
+
+
+
+    }
+}
+
+
+</script>
+
+</body>
+</html>
