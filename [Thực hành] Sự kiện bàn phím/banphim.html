@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
-<img id="nobita" src="images/nobita.jpg" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+<body onload="doReady()">
+<img id="nobita" src="https://cf.shopee.vn/file/aebc003dc91cac806a86e0975113a427" style="position:absolute;left:0; top:0;" height="100" width="80"/>
 
 <script>
     function nhanlen() {
@@ -25,8 +25,8 @@
         element.style.left = parseInt(element.style.left) + 10 +"px";
     }
 
-    function moveSelect(mv) {
-        switch (mv.keycode) {
+    function moveSelect(evt) {
+        switch (evt.keyCode) {
             case 38:
                 nhanlen();
                 break;
@@ -41,6 +41,11 @@
                 break;
         }
     }
+    function doReady() {
+        window.addEventListener("keydown", moveSelect);
+    }
+
+
 
 
 
