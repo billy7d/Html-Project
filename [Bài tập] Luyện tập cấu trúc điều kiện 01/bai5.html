@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var exam = parseFloat(prompt("Nhap diem kiem tra"));
+    var mid = parseFloat(prompt("Nhap diem giua ki"));
+    var final = parseFloat(prompt("Nhap diem cuoi ki"));
+
+    var ava = (exam + mid + final)/3;
+
+    if (ava >= 9.0) {
+        alert("Ban doat loai gioi");
+    } else if (ava >= 7.0 && ava < 9 ){
+        alert("Ban doat loai kha");
+    } else if (ava >= 5.0 && ava <7){
+        alert("Xep hang trung binh");
+    } else {
+        alert("Xep loai yeu");
+    }
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
