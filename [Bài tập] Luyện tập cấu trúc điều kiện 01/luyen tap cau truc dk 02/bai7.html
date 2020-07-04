@@ -16,13 +16,21 @@
 
     if (a == 0){
         x = -c /b;
+        alert(x);
     } else if ( a !== 0 && delta > 0 ){
         x1 = ((-b - Math.sqrt(delta)) / 2*a);
         x2 = ((-b + Math.sqrt(delta)) / 2*a);
+        alert("x1 = "+ x1);
+        alert("x2 = "+ x2);
 
+    } else if ( a !== 0 && delta == 0 ){
+        x1 = x2 =  -b /( 2*a );
+        alert(x1);
+    } else if (  a !== 0 && delta < 0 ){
+        alert("phuong trinh vo nghiem");
     }
 
-    }
+
 
 </script>
 
