@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ax2 + bx + c = 0</title>
+</head>
+<body>
+<script>
+    var a = parseFloat(prompt("Nhap so a:"));
+    var b =parseFloat(prompt("Nhap so b:"));
+    var c =parseFloat(prompt("Nhap so c:"));
+    var delta = (b*b) - (4*a*c);
+    var x = 0;
+    var x1 = 0;
+    var x2 = 0;
+
+    if (a == 0){
+        x = -c /b;
+    } else if ( a !== 0 && delta > 0 ){
+        x1 = ((-b - Math.sqrt(delta)) / 2*a);
+        x2 = ((-b + Math.sqrt(delta)) / 2*a);
+
+    }
+
+    }
+
+</script>
+
+</body>
+</html>
