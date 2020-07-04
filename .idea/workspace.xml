@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/[Thực hành] Sự kiện chuột/su-kien-chuot.css" beforeDir="false" afterPath="$PROJECT_DIR$/[Thực hành] Sự kiện chuột/su-kien-chuot.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/[Bài tập] Game puzzle/game-puzzle.html" beforeDir="false" afterPath="$PROJECT_DIR$/[Bài tập] Game puzzle/game-puzzle.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/[Thực hành] Sự kiện chuột/su-kien-chuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/[Thực hành] Sự kiện chuột/su-kien-chuot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/[Bài tập] Luyện tập cấu trúc điều kiện 01/luyen tap cau truc dk 02" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -92,7 +92,8 @@
       <workItem from="1593440142654" duration="204000" />
       <workItem from="1593521996900" duration="8880000" />
       <workItem from="1593589134505" duration="48000" />
-      <workItem from="1593652351974" duration="4443000" />
+      <workItem from="1593652351974" duration="5672000" />
+      <workItem from="1593830048095" duration="146000" />
     </task>
     <servers />
   </component>
@@ -120,10 +121,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="66" key="#dung-1-ham.js/0.0.1536.824@0.0.1536.824" timestamp="1593573991865" />
-    <state x="838" y="202" key="FileChooserDialogImpl" timestamp="1593589180528">
+    <state x="838" y="202" key="FileChooserDialogImpl" timestamp="1593830193464">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593589180528" />
+    <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593830193464" />
     <state x="1047" y="255" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593440343920" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1593579356090">
       <screen x="0" y="0" width="1536" height="824" />
