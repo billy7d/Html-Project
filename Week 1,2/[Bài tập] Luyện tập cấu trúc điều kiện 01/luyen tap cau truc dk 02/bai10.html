@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ var a = parseFloat(prompt("So kWh dien da su dung"));
+ var tiendien = 0;
+ if (a >= 401){
+     tiendien = (1675 * 50) + (1734 *100) + (2014 * 200) + (2536 * 300) + (2834 * 400) + (2927 * (a - 400));
+     alert("So tien phai tra la: " + tiendien);
+ } else if (a >= 301 && a <401){
+     tiendien = (1675 * 50) + (1734 *100) + (2014 * 200) + (2536 * 300) + (2834 * (a - 300));
+     alert("So tien phai tra la: " + tiendien);
+ } else if (a >= 201 && a <301) {
+     tiendien = (1675 * 50) + (1734 *100) + (2014 * 200) + (2536 * (a - 200));
+     alert("So tien phai tra la: " + tiendien);
+ } else if (a >= 101  && a<201) {
+     tiendien = (1675 * 50) + (1734 *100) + (2014 * (a - 100));
+     alert("So tien phai tra la: " + tiendien);
+ } else if (a>=51  && a < 101) {
+     tiendien = (1675 * 50) + (1734 * (a - 50));
+     alert("So tien phai tra la: " + tiendien);
+ } else if (a>0   && a<51){
+     tiendien = (1675 * a);
+     alert("So tien phai tra la: " + tiendien);
+ }
+
+</script>
+
+</body>
+</html>

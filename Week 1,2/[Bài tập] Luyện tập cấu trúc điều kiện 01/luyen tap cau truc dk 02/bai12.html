@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /* tong tien goc moi = tien goc * (1 + (lai suat/so lan dc nhan lai moi nam))**((so lan dc nhan lai moi nam) * (nam gui))*/
+
+    var tiengoc = parseFloat(prompt("Nhập số tiền gốc gửi vào: "));
+    var laisuat = parseFloat(prompt("Nhập lãi suât khi gửi :"));
+    var laisuat1 = laisuat / 100;
+    var tralai = parseFloat(prompt("Số lần được trả lãi để nhập gốc trong 1 năm: "));
+    var sonam = parseFloat(prompt("Số năm gửi:"));
+
+    var tiengocmoi = tiengoc * (1+ laisuat1/tralai)**(tralai * sonam);
+
+    alert(tiengocmoi + " VND");
+
+
+
+
+
+</script>
+
+</body>
+</html>

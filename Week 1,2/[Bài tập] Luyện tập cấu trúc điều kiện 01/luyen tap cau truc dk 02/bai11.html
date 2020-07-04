@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var thunhap = parseFloat(prompt("Nhập thu nhập: (Đơn vị: triệu đồng)"));
+    var thue = 0;
+
+    if (thunhap > 80) {
+        thue = (thunhap * 35) /100;
+        alert(thue + "trieu dong");
+    } else if (thunhap > 52 && thunhap<=80 ) {
+        thue = (thunhap * 30) /100;
+        alert(thue + "trieu dong");
+    } else if (thunhap > 32 && thunhap<=52 ) {
+        thue = (thunhap * 25) /100;
+        alert(thue + "trieu dong");
+    } else if (thunhap > 18 && thunhap<=32 ) {
+        thue = (thunhap * 20) / 100;
+        alert(thue + "trieu dong");
+    }  else if (thunhap > 10 && thunhap<=18 ) {
+        thue = (thunhap * 15) / 100;
+        alert(thue + "trieu dong");
+    } else if (thunhap > 5 && thunhap<=10 ) {
+        thue = (thunhap * 10) / 100;
+        alert(thue + "trieu dong");
+    } else if (thunhap<5 ) {
+        thue = (thunhap * 5) / 100;
+        alert(thue + "trieu dong");
+    }
+
+
+
+</script>
+
+</body>
+</html>
