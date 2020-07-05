@@ -6,16 +6,28 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="dip">
-    <img src="D:/img/r1img1.jpg" id="img1" name="1" onclick="changeimg()">
 
-</div>
+<div><img src="image/r1img1.jpg" id="img1" name="1" onclick="changeimg('r1')"></div>
+<div><img src="image/r2img2.jpg" id="img2" name="2" onclick="changeimg('r2')"></div>
+<div><img src="image/r3img3.jpg" id="img3" name="3" onclick="changeimg('r3')"></div>
+<div><img src="image/r4img1.jpg" id="img4" name="1" onclick="changeimg('r4')"></div>
+<div><img src="image/r5img2.jpg" id="img5" name="2" onclick="changeimg('r5')"></div>
+
+
 <script>
-    function changeimg() {
-        var a = document.getElementById("img1").name;
-
-
-
+    function changeimg(row) {
+        var numb = document.getElementById("img1").name;
+        if (numb !==3) {
+            numb = numb + 1;
+        } else {
+            numb =1;
+        }
+        var currentImg= "image/" + row + "img" + numb + ".jpg";
+        document.getElementById("img1").src = currentImg;
+        document.getElementById("img2").src = currentImg;
+        document.getElementById("img3").src = currentImg;
+        document.getElementById("img4").src = currentImg;
+        document.getElementById("img5").src = currentImg;
     }
 
 
