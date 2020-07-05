@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 1,2/[Bài tập] Game puzzle/game-puzzle.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/[Bài tập] Game puzzle/game-puzzle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheao.js" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheao.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +63,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Html-Project\Week 1,2\[Bài tập] Game puzzle" />
+    </key>
+  </component>
   <component name="RunManager" selected="Node.js.dung-1-ham.js">
     <configuration name="dung-1-ham.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Html-Project/dung-1-ham.html" useBuiltInWebServerPort="true">
       <method v="2" />
@@ -93,7 +100,7 @@
       <workItem from="1593589134505" duration="48000" />
       <workItem from="1593652351974" duration="4443000" />
       <workItem from="1593953220342" duration="26000" />
-      <workItem from="1593953246925" duration="4495000" />
+      <workItem from="1593953246925" duration="7438000" />
     </task>
     <servers />
   </component>
