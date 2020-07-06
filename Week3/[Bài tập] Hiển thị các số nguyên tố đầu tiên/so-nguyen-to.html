@@ -8,13 +8,14 @@
 <script>
     var numbers = 0;
     var numbers = parseInt(prompt("So luong so nguyen to can in ra"));
+    let a = numbers * 2;
     var count =0;
     var n = 2;
-     while ( count < numbers) {
+     while ( count < a) {
          if (n == 2) {
-             alert(n);
+             document.write(n);
          } else if (n % 2 !==0) {
-             alert(n);
+             document.write(n);
          } count++;
          n++;
      }
