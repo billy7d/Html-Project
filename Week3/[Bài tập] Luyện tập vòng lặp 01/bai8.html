@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Choi" onclick="start()"/>
+<input type="reset" value="Reset" onclick="window.location.reload();"/>
+<script>
+
+    function start() {
+
+
+        var range = parseInt(prompt("Nhap vao khoang muon doan VD:10 ( 1- 10)"));
+        var getNumb = parseInt(prompt("Doan 1 so trong khoang da nhap"));
+        var random = Math.floor(Math.random() * range) + 1;
+        var i = 1;
+        while (i <= 5) {
+            if (getNumb === random) {
+                alert("Chuc mung da chien thang");
+                break;
+            } else if (getNumb > random) {
+                alert("So ban doan lon hon so cua ctrinh");
+                getNumb = parseInt(prompt("Doan 1 so trong khoang da nhap"));
+
+            } else if (getNumb < random) {
+                alert("So ban doan nho hon so cua ctrinh");
+                getNumb = parseInt(prompt("Doan 1 so trong khoang da nhap"));
+            }
+            i++;
+        }
+    }
+
+
+</script>
+
+</body>
+</html>
