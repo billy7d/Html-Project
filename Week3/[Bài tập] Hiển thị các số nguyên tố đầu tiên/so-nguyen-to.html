@@ -6,19 +6,35 @@
 </head>
 <body>
 <script>
-    var numbers = 0;
-    var numbers = parseInt(prompt("So luong so nguyen to can in ra"));
-    let a = numbers * 2;
-    var count =0;
-    var n = 2;
-     while ( count < a) {
-         if (n == 2) {
-             document.write(n);
-         } else if (n % 2 !==0) {
-             document.write(n);
-         } count++;
-         n++;
-     }
+    var n = parseInt(prompt("So luong so nguyen to can in ra"));
+    var count = 0;
+    var number = 1;
+
+
+
+    function isPrime(number) {
+        if (number < 2){
+            return false;
+        }
+        for ( let i=2; i<= Math.sqrt(number); i++){
+            if (number % i ==0){
+
+            }
+
+        }
+        return true;
+    }
+
+    while (count < n){
+        if (isPrime(number) == true){
+            count++;
+            document.write(number + " ");
+        }
+        number ++;
+    }
+
+
+
 
 
 
