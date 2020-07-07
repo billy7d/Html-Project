@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
-    let firstNum = 1;
-    let secondNum = 1;
-    let k = 0;
-    let Result = "Dãy 20 số fibonacci đầu tiên là 1, 1";
-    for (let i=3;i<=20;i++){
-        k = secondNum;
-        secondNum = secondNum + firstNum;
-        firstNum = k;
-        Result = Result + ", "+secondNum;
+
+    var so1 = -2;
+    var so2 = 1;
+    var c = -1;
+
+    for (n=1;n<=20;n++){
+        so1 = c;
+        so2= so1+so2;
+        c = so2 - so1;
+        document.write(so2 + " , ");
     }
-    document.write(Result);
 
 </script>
 
