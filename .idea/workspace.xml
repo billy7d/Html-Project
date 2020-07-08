@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai3.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheao.js" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.css" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 1,2/Good, fast, cheap/goodfastcheap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week 1,2/[Bài tập] Game puzzle/game-puzzle.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -62,20 +61,22 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Html-Project\Week 1,2" />
       <recent name="D:\Html-Project\Week 1,2\[Bài tập] Game puzzle" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.dung-1-ham.js">
-    <configuration name="dung-1-ham.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Html-Project/dung-1-ham.html" useBuiltInWebServerPort="true">
+    <configuration name="dung-1-ham.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Html-Project/Week 1,2/dung-1-ham.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="chuyen-doi-tien-te.js" type="NodeJSConfigurationType" path-to-node="node" nameIsGenerated="true" path-to-js-file="chuyen-doi-tien-te.js" working-dir="$PROJECT_DIR$/[Bài tập] Ứng dụng chuyển đổi tiền tệ">
       <method v="2" />
     </configuration>
-    <configuration name="dung-1-ham.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/dung-1-ham.js" working-dir="$PROJECT_DIR$">
+    <configuration name="dung-1-ham.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/Week 1,2/dung-1-ham.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -100,7 +101,10 @@
       <workItem from="1593589134505" duration="48000" />
       <workItem from="1593652351974" duration="4443000" />
       <workItem from="1593953220342" duration="26000" />
-      <workItem from="1593953246925" duration="7438000" />
+      <workItem from="1593953246925" duration="8281000" />
+      <workItem from="1594040328442" duration="18000" />
+      <workItem from="1594040353395" duration="4664000" />
+      <workItem from="1594212587388" duration="3737000" />
     </task>
     <servers />
   </component>
@@ -128,11 +132,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="66" key="#dung-1-ham.js/0.0.1536.824@0.0.1536.824" timestamp="1593573991865" />
-    <state x="1047" y="255" key="FileChooserDialogImpl" timestamp="1593956893577">
+    <state x="1047" y="255" key="FileChooserDialogImpl" timestamp="1594045987352">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593589180528" />
-    <state x="1047" y="255" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1593956893577" />
+    <state x="1047" y="255" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594045987352" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1593579356090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -197,6 +201,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1593579356091" />
+    <state x="922" y="168" key="SettingsEditor" timestamp="1594213250366">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594213250366" />
     <state x="302" y="0" width="1159" height="1047" key="dock-window-1" timestamp="1593957144006">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
