@@ -22,26 +22,26 @@
         engText.push(getText.toString());
 
         for (i = 0; i < 10; i++) {
-            if (engText.indexOf("dog") !== -1) {
+            if (engText[engText.length -1] === "dog") {
                 document.getElementById("viet").value = viet[0];
-                continue;
 
 
-            } else if (engText.indexOf("headphone") !== -1) {
+
+            } else if (engText[engText.length -1] === "headphone") {
                 document.getElementById("viet").value = viet[1];
-                continue;
 
 
 
-            } else if (engText.indexOf("game") !== -1) {
+
+            } else if (engText[engText.length -1] === "game") {
                 document.getElementById("viet").value = viet[2];
-                continue;
 
 
 
-            } else if (engText.indexOf("computer") !== -1) {
+
+            } else if (engText[engText.length -1] === "computer") {
                 document.getElementById("viet").value = viet[3];
-                continue;
+
 
             } else {
                 alert("Khong co gia tri");
