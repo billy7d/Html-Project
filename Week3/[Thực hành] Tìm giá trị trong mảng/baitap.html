@@ -8,11 +8,15 @@
 <script>
     var inputnumb =parseInt(prompt("Input a number"));
     var x =[1,2,3];
-    for (let i = 0; i < x.length; i++) {
+    for (let i = x.length;x.length >0; i--) {
+
         if (inputnumb == x[i]) {
             alert("Value " + x[i] + "found at " + i);
-        }
-    } alert("Not an array item");
+            break;
+        } else {
+            alert("Not an array item");
+        } inputnumb =parseInt(prompt("Input a number"));
+    }
 </script>
 
 </body>
