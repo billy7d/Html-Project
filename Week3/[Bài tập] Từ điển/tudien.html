@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="eng"/>
+<input type="text" id="viet" disabled/>
+<button type="button" id="butt" onclick="trans()">Translate</button>
+<button type="button" onclick="window.location.reload()">Delete</button>
+
+<script>
+    var eng = ["dog","headphone","game","computer"];
+    var viet = ["con chó","tai nghe","trò chơi","máy tính"];
+    var getText = 0;
+    console.log(getText)
+    var engText = [];
+
+    function trans() {
+        getText = document.getElementById("eng").value;
+        engText.push(getText.toString());
+
+        for (i = 0; i < 10; i++) {
+            if (engText.indexOf("dog") !== -1) {
+                document.getElementById("viet").value = viet[0];
+                continue;
+
+
+            } else if (engText.indexOf("headphone") !== -1) {
+                document.getElementById("viet").value = viet[1];
+                continue;
+
+
+
+            } else if (engText.indexOf("game") !== -1) {
+                document.getElementById("viet").value = viet[2];
+                continue;
+
+
+
+            } else if (engText.indexOf("computer") !== -1) {
+                document.getElementById("viet").value = viet[3];
+                continue;
+
+            } else {
+                alert("Khong co gia tri");
+
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
