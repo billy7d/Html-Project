@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center">Type anthing slowly</h1>
+<input type="text" id="nhapvao" onkeyup="nhannut()" style="height: 150px; width: 300px; margin-left: 800px; margin-top: 20px"/>
+
+<script>
+    let arr = "Tôi không những xấu zai lại được cái hôi nách";
+    str = arr.split();
+    console.log(str);
+
+    function nhannut(){
+        let a = " ";
+        for (i=0;i< str.length;i++) {
+            a = a + str[i];
+
+        }
+        document.getElementById("nhapvao").value = a;
+
+    }
+
+
+</script>
+
+
+
+</body>
+</html>
