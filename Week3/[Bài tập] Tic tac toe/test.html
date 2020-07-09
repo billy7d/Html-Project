@@ -1,128 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <style type="text/css">
-        table {
-            border: 1px solid black;
-            font-size: 30px;
-            text-align: center;
+<script>
+    var CurrentVal = "X";
+    var gameOver = false;
+    const boxes = document.getElementsByClassName("box");
+    const WinCombo = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,3,6],
+        [1,4,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,6]
+    ];
+    function AddVal(num) {
+        let ID = "" + num ;
+        if (document.getElementById(ID).innerHTML !== '') return;
+        if (gameOver) return;
+        if (CurrentVal == "X"){
+            document.getElementById(ID).innerHTML = 'X';
+            document.getElementById("player").innerHTML = 'X';
+            CurrentVal = 'O';
+        }else {
+            document.getElementById(ID).innerHTML='0';
+            document.getElementById("player").innerHTML = 'O';
+            CurrentVal = 'X';
         }
-
-        td {
-            border: 1px solid black;
-            width: 50px;
-            height: 50px;
-        }
-    </style>
-</head>
-<body>
-<script type="text/javascript">
-    let status = "x";
-
-    function drawBoard(N) {
-        let string = "<table>";
-        for (let i = 0; i < N; i++) {
-            string += "<tr>";
-            for (let j = 0; j < N; j++) {
-                string += "<td id='id" + i + j + "' onclick='displayXO(this.id,"+i+","+j+");'></td>";
-            }
-            string += "</tr>";
-        }
-        string += "</table>";
-        document.write(string);
+        checkWin();
     }
-    function displayXO(idOfCell,i,j) {
-        if(document.getElementById(idOfCell).innerHTML=="")
-            document.getElementById(idOfCell).innerHTML = status;
-        if (status == "x") {
-            status = "o";
-        } else {
-            status = "x";
+    function checkWin() {
+        for (let i = 0; i <= WinCombo.length; i++) {
+            let ID = [];
+            for (let j = 0; j <= WinCombo[0].length ; j++) {
+                ID[j] = ""+ WinCombo[i][j];
+            }
+            if (document.getElementById(ID[0]).innerHTML == ""){
+                continue;
+            }
+            if (document.getElementById(ID[0]).innerHTML === document.getElementById(ID[1]).innerHTML && document.getElementById(ID[1]).innerHTML === document.getElementById(ID[2]).innerHTML){
+                document.getElementById("winner").innerHTML = document.getElementById(ID[0]).innerHTML;
+                gameOver = true;
+                break;
+            }
         }
-        checkWin(i,j);
     }
-    function checkWin(xPosition,yPosition){
-
-        count=1;
-        i=xPosition;
-        j=yPosition;
-        let value=document.getElementById("id"+i+j).innerHTML;
-        //Kiem tra tren hang i
-        while(document.getElementById("id"+i+(j+1)).innerHTML==value){
-            count++;
-            if(count==5){
-                alert("Winner!!!!");
-                return true;
-            }
-            j++;
+    function reSet() {
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].innerHTML = "";
         }
-        i=xPosition;
-        j=yPosition;
-        while(document.getElementById("id"+i+(j-1)).innerHTML==value){
-            count++;
-            if(count==5){
-                alert("Winner!!!!");
-                return true;
-            }
-            j--;
-        }
-        //Kiem tra theo cot j
-        count=1;
-        i=xPosition;
-        j=yPosition;
-        while(document.getElementById("id"+(i+1)+j).innerHTML==value){
-            count++;
-            alert(count);
-            if(count==5){
-                alert("Winner!!!!");
-                return true;
-            }
-            i++;
-        }
-        i=xPosition;
-        j=yPosition;
-        while(document.getElementById("id"+(i-1)+j).innerHTML==value){
-            count++;
-            alert(count);
-            if(count==5){
-                alert("Winner!!!!");
-                return true;
-            }
-            i--;
-        }
-        //Kiem tra theo duong Cheo phai
-        count=1;
-        i=xPosition;
-        j=yPosition;
-        while(document.getElementById("id"+(i-1)+(j+1)).innerHTML==value){
-            //alert(document.getElementById("id"+(i-1)+(j+1)).innerHTML);
-            count++;
-            if(count==5){
-                alert("Winner!!!!");
-                return true;
-            }
-            i--;
-            j++;
-        }
-        i=xPosition;
-        j=yPosition;
-        while(document.getElementById("id"+(i+1)+(j-1)).innerHTML==value){
-            count++;
-            if(count==5){
-                alert("Winner!!!!");
-                return true;
-            }
-            i++;
-            j--;
-        }
-//Tu viet cheo trai
-
+        gameOver = false;
     }
-    drawBoard(9);
+
+
+
 
 </script>
-
-</body>
-</html>

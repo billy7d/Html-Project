@@ -10,19 +10,19 @@
 <table>
 
     <tr>
-        <td class="box" id="11" onclick="addXO(1,1)"></td>
-        <td class="box" id="12" onclick="addXO(1,2)"></td>
-        <td class="box" id="13" onclick="addXO(1,3)"></td>
+        <td class="box" id="0" onclick="addXO(0)"></td>
+        <td class="box" id="1" onclick="addXO(1)"></td>
+        <td class="box" id="2" onclick="addXO(2)"></td>
     </tr>
     <tr>
-        <td class="box" id="21" onclick="addXO(2,1)"></td>
-        <td class="box" id="22" onclick="addXO(2,2)"></td>
-        <td class="box" id="23" onclick="addXO(2,3)"></td>
+        <td class="box" id="3" onclick="addXO(3)"></td>
+        <td class="box" id="4" onclick="addXO(4)"></td>
+        <td class="box" id="5" onclick="addXO(5)"></td>
     </tr>
     <tr>
-        <td class="box" id="31" onclick="addXO(3,1)"></td>
-        <td class="box" id="32" onclick="addXO(3,2)"></td>
-        <td class="box" id="33" onclick="addXO(3,3)"></td>
+        <td class="box" id="6" onclick="addXO(6)"></td>
+        <td class="box" id="7" onclick="addXO(7)"></td>
+        <td class="box" id="8" onclick="addXO(8)"></td>
     </tr>
 
 
@@ -31,21 +31,41 @@
 
 
 <script>
+    let chuyengt = "x";
+    let arr = [
+        [0,1,2],
+        [3,4,5],
+        [6,7,8],
+        [0,4,7],
+        [0,1,2],
+        [1,5,7],
+        [2,5,8],
+        [0,4,8],
+        [2,4,7],
+    ];
+    function addXO(numb) {
 
+        if (document.getElementById(numb).innerHTML === "") {
+            if (chuyengt == "x") {
+                document.getElementById(numb).innerHTML = "x";
+                chuyengt = "o";
+            } else{
+                document.getElementById(numb).innerHTML = "o";
+                chuyengt = "x";
 
-
-        function addXO(r,c) {
-            let ID = ""+r+c;
-            if(document.getElementById(ID).innerHTML=="")
-                document.getElementById(ID).innerHTML = status;
-            if (status == "x") {
-                status = "o";
-            } else {
-                status = "x";
             }
+        } checkWin()
+    }
 
-        }
+    function checkWin() {
+        for (let i = 0; i <= arr.length; i++) {
+            let arr2 = [];
+            for (let j = 0; j <= arr[0].length; j++) {
+                arr2[j] = "" + arr[i][j];
 
+            }
+        } console.log(arr2);
+    }
 </script>
 
 
