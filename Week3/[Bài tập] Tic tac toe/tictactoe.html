@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="tictactoe.css">
+
+</head>
+<body>
+<table>
+
+    <tr>
+        <td class="box" id="11" onclick="addXO(1,1)"></td>
+        <td class="box" id="12" onclick="addXO(1,2)"></td>
+        <td class="box" id="13" onclick="addXO(1,3)"></td>
+    </tr>
+    <tr>
+        <td class="box" id="21" onclick="addXO(2,1)"></td>
+        <td class="box" id="22" onclick="addXO(2,2)"></td>
+        <td class="box" id="23" onclick="addXO(2,3)"></td>
+    </tr>
+    <tr>
+        <td class="box" id="31" onclick="addXO(3,1)"></td>
+        <td class="box" id="32" onclick="addXO(3,2)"></td>
+        <td class="box" id="33" onclick="addXO(3,3)"></td>
+    </tr>
+
+
+
+</table>
+
+
+<script>
+
+
+
+        function addXO(r,c) {
+            let ID = ""+r+c;
+            if(document.getElementById(ID).innerHTML=="")
+                document.getElementById(ID).innerHTML = status;
+            if (status == "x") {
+                status = "o";
+            } else {
+                status = "x";
+            }
+
+        }
+
+</script>
+
+
+
+</body>
+</html>

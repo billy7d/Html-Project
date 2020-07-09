@@ -20,9 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Tic tac toe/tictactoe.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Tic tac toe/tictactoe.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 1,2/[Bài tập] Game puzzle/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/tudien.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/tudien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/[Thực hành] Tạo và thao tác với mảng.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/[Thực hành] Tạo và thao tác với mảng.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/dao-nguoc-phan-tu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/dao-nguoc-phan-tu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/tudien.html" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -132,10 +137,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="66" key="#dung-1-ham.js/0.0.1536.824@0.0.1536.824" timestamp="1593573991865" />
-    <state x="1047" y="255" key="FileChooserDialogImpl" timestamp="1594045987352">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="838" y="202" key="FileChooserDialogImpl" timestamp="1594264989849">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1593589180528" />
+    <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1594264989849" />
     <state x="1047" y="255" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594045987352" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1593579356090">
       <screen x="0" y="0" width="1536" height="824" />
@@ -201,19 +206,20 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1593579356091" />
-    <state x="922" y="168" key="SettingsEditor" timestamp="1594213250366">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594213250366" />
-    <state x="302" y="0" width="1159" height="1047" key="dock-window-1" timestamp="1593957144006">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-5" y="0" width="597" height="802" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1593574312702" />
-    <state x="302" y="0" width="1159" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1593957144006" />
-    <state x="-26" y="0" width="784" height="830" key="dock-window-2" timestamp="1593576646912">
+    <state x="540" y="113" key="SettingsEditor" timestamp="1594257506366">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-26" y="0" width="784" height="830" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1593576646912" />
+    <state x="540" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594257506366" />
+    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594213250366" />
+    <state x="-6" y="0" width="653" height="830" key="dock-window-1" timestamp="1594260127710">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-6" y="0" width="653" height="830" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1594260127710" />
+    <state x="302" y="0" width="1159" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1593957144006" />
+    <state x="-6" y="0" width="694" height="802" key="dock-window-2" timestamp="1594270170995">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-6" y="0" width="694" height="802" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1594270170995" />
     <state x="-6" y="0" width="667" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1593530930397" />
     <state x="-7" y="0" width="668" height="1047" key="dock-window-3" timestamp="1593530930397">
       <screen x="0" y="0" width="1920" height="1040" />
