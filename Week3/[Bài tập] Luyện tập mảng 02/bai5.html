@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arrayA = [1,2,3,4,5,6];
+    let arrayB = [1,2,3,4,5,6];
+    let c = false;
+
+
+    if (arrayA.length == arrayB.length){
+        for (i=0; i<arrayA.length;i++) {
+            if (arrayA[i] == arrayB[i]) {
+                c = true;
+            } else if (arrayA[i] !== arrayB[i]){
+                c =false;
+                break;
+            }
+        }
+    } else if (arrayA.length !== arrayB.length){
+        c= false;
+    }
+if (c==true){
+    document.write("2 mang bang nhau");
+}else if (c== false) {
+    document.write("2 mang khong bang nhau")
+}
+
+
+
+</script>
+
+</body>
+</html>

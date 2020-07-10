@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +104,8 @@
       <workItem from="1594040328442" duration="18000" />
       <workItem from="1594040353395" duration="4664000" />
       <workItem from="1594212587388" duration="3737000" />
-      <workItem from="1594359065666" duration="311000" />
+      <workItem from="1594359065666" duration="623000" />
+      <workItem from="1594362907151" duration="2727000" />
     </task>
     <servers />
   </component>
@@ -228,5 +229,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="22" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593576717326" />
+    <state x="689" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594363027413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="689" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594363027413" />
   </component>
 </project>
