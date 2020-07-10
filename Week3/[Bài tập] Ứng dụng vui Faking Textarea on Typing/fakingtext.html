@@ -10,15 +10,18 @@
 
 <script>
     let arr = "Tôi không những xấu zai lại được cái hôi nách ahihi.";
-    str = arr.split("");
-    str2 = str.join(" ");
-    console.log(str);
 
-    function nhannut(){
-        let a = " ";
-        for (i=0;i< str.length;i++) {
-            a = a + str[i];
+   let nhapvao;
 
+        function nhannut(){
+        nhapvao = document.getElementById("nhapvao").value;
+        let a = "";
+        for (i=0;i<nhapvao.length;i++) {
+            a = a + arr[i];
+
+        }
+        if (arr.length < nhapvao.length){
+            a = "";
         }
         document.getElementById("nhapvao").value = a;
 

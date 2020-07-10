@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Ứng dụng vui Faking Textarea on Typing/fakingtext.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week3/[Bài tập] Ứng dụng vui Faking Textarea on Typing/fakingtext.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +105,7 @@
       <workItem from="1594040353395" duration="4664000" />
       <workItem from="1594212587388" duration="3737000" />
       <workItem from="1594359065666" duration="623000" />
-      <workItem from="1594362907151" duration="2727000" />
+      <workItem from="1594362907151" duration="4070000" />
     </task>
     <servers />
   </component>
