@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numb = 0;
+    let arr = [];
+    let numbcheck = parseInt(prompt("Nhap vao 1 so de kiem tra trong chuoi"))
+    for (i=0;i<10;i++){
+       numb = Math.floor(Math.random()*10) +1;
+       numb = numb * Math.floor(Math.random()*2) == 1? 1:-1;
+       arr.push(numb);
+       if (numbcheck == arr[i]){
+           alert("So do co trong chuoi");
+           break;
+       } else {
+           alert("So do ko co trong chuoi");
+          break;
+       }
+    }
+
+
+</script>
+
+</body>
+</html>
