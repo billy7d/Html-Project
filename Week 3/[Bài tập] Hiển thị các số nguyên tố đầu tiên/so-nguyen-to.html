@@ -13,14 +13,14 @@
 
 
     function isPrime(number) {
-        if (number < 2){
+        if (numb<2){
             return false;
-        }
-        for ( let i=2; i<= Math.floor(Math.sqrt(number)); i++){
-            if (number % i !==0){
+        } else if (numb >= 2) {
+            for (i = 2; i < Math.floor(Math.sqrt(numb)); i++) {
+                if (numb % i == 0) {
 
-            }
-
+                }
+            } return false
         }
         return true;
     }
