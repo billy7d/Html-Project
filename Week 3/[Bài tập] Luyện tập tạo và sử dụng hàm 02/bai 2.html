@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function circleArea(radius) {
+        let result1 = radius*radius*3.14;
+        return result1;
+    }
+    
+    function circlePerimetre(radius) {
+        let result2 = (radius*2)*3.14;
+        return result2;
+    }
+
+    let radius = 10;
+    document.write("Chu vi cua hinh tron voi ban kinh " + radius + " " + "la: " +circlePerimetre(radius));
+    document.write("<br>");
+    document.write("Dien tich cua hinh tron voi ban kinh " + radius + " " + "la: " +circleArea(radius));
+    
+</script>
+
+</body>
+</html>
