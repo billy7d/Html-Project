@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 3/[Bài tập] Luyện tập tạo và sử dụng hàm 01/bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 3/[Bài tập] Luyện tập tạo và sử dụng hàm 01/bai5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,7 @@
       <workItem from="1594475588769" duration="2554000" />
       <workItem from="1594520203324" duration="9567000" />
       <workItem from="1594543990626" duration="5249000" />
-      <workItem from="1594559753961" duration="1577000" />
+      <workItem from="1594559753961" duration="3144000" />
     </task>
     <servers />
   </component>
@@ -233,9 +234,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="986" y="332" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593527067290" />
-    <state x="22" y="190" key="run.anything.popup" timestamp="1593576717326">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="28" y="240" key="run.anything.popup" timestamp="1594562494536">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="22" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593576717326" />
+    <state x="28" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594562494536" />
   </component>
 </project>
