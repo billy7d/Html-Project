@@ -20,9 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Hàm kiểm tra số nguyên tố/so-nguyen-to.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/so-nguyen-to.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/so-nguyen-to.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 4/[Bài tập] Hàm kiểm tra số nguyên tố/so-nguyen-to.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Hàm kiểm tra số nguyên tố/so-nguyen-to.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +106,7 @@
       <workItem from="1594212587388" duration="3737000" />
       <workItem from="1594433947131" duration="5032000" />
       <workItem from="1594475588769" duration="2554000" />
-      <workItem from="1594520203324" duration="6479000" />
+      <workItem from="1594520203324" duration="7150000" />
     </task>
     <servers />
   </component>

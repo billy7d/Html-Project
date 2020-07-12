@@ -13,14 +13,14 @@ function isPrime(numb) {
     } else if (numb >= 2) {
         for (i = 2; i < Math.floor(Math.sqrt(numb)); i++) {
             if (numb % i == 0) {
-
+                return false;
             }
-        } return false
+        }
     }
 return true;
 }
-let result = isPrime(10);
-alert(result);
+let result = isPrime(parseInt(prompt()));
+alert("Is that a prime number : " + result);
 </script>
 
 </body>

@@ -18,9 +18,9 @@
         } else if (numb >= 2) {
             for (i = 2; i < Math.floor(Math.sqrt(numb)); i++) {
                 if (numb % i == 0) {
-
+                    return false
                 }
-            } return false
+            }
         }
         return true;
     }
