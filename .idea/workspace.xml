@@ -20,140 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 4/[Thực hành] Tạo và gọi hàm/tao va goi ham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 4/[Thực hành] Chuyển đổi nhiệt độ/chuyen-nhiet-do.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/.idea/Week3.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/Vòng lặp lồng/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/Vòng lặp lồng/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/Vòng lặp lồng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/Vòng lặp lồng/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/Vòng lặp lồng/.idea/vong lap long.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/Vòng lặp lồng/vong lap long.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/.idea/[Bài tập] Hiển thị các số nguyên tố đầu tiên.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Hiển thị các số nguyên tố đầu tiên/so-nguyen-to.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 01/bai8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập mảng 02/bai6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/.idea/[Bài tập] Luyện tập vòng lặp 01.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai6.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai7.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 01/bai8.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/.idea/[Bài tập] Luyện tập vòng lặp 02.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Luyện tập vòng lặp 02/bai4.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sinh bảng cửu chương/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sinh bảng cửu chương/.idea/[Bài tập] Sinh bảng cửu chương.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sinh bảng cửu chương/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sinh bảng cửu chương/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sinh bảng cửu chương/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sinh bảng cửu chương/bangcuuchuong.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/.idea/[Bài tập] Sử dụng các hàm có sẵn của mảng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Sử dụng các hàm có sẵn của mảng/bai3.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Tic tac toe/tictactoe.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Tic tac toe/tictactoe.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/.idea/[Bài tập] Từ điển.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Từ điển/tudien.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Bài tập] Ứng dụng vui Faking Textarea on Typing/fakingtext.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp do-while/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp do-while/.idea/[Thực hành] Sử dụng vòng lặp do-while.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp do-while/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp do-while/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp do-while/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp do-while/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/.idea/[Thực hành] Sử dụng vòng lặp for.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp for/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/.idea/[Thực hành] Sử dụng vòng lặp while.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/bai1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Sử dụng vòng lặp while/bai2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/[Thực hành] Tìm giá trị lớn nhất trong mảng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị lớn nhất trong mảng/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị lớn nhất trong mảng/bt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị trong mảng/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị trong mảng/.idea/[Thực hành] Tìm giá trị trong mảng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị trong mảng/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị trong mảng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị trong mảng/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tìm giá trị trong mảng/baitap.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo bàn cờ caro đơn giản/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo bàn cờ caro đơn giản/.idea/[Thực hành] Tạo bàn cờ caro đơn giản.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo bàn cờ caro đơn giản/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo bàn cờ caro đơn giản/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo bàn cờ caro đơn giản/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo bàn cờ caro đơn giản/1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/[Thực hành] Tạo và thao tác với mảng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Tạo và thao tác với mảng/thaotacmang.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/[Thực hành] Đảo ngược các phần tử trong mảng.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/[Thực hành] Đảo ngược các phần tử trong mảng/dao-nguoc-phan-tu.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/vong lap long/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/vong lap long/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/vong lap long/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/vong lap long/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/vong lap long/.idea/vong lap long.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week3/vong lap long/vong lap long.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -238,7 +106,7 @@
       <workItem from="1594212587388" duration="3737000" />
       <workItem from="1594433947131" duration="5032000" />
       <workItem from="1594475588769" duration="2554000" />
-      <workItem from="1594520203324" duration="387000" />
+      <workItem from="1594520203324" duration="2032000" />
     </task>
     <servers />
   </component>
