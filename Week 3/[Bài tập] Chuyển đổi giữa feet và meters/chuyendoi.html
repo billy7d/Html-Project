@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Feet: <input type="number" id="feet">
+Meters: <input type="number" id="meters">
+<button type="button" onclick="convertToFeet()">Convert to Feet</button>
+<button type="button" onclick="convertToMeters()">Convert to Meters</button>
+<br><br>Meters to Feet: <input type="text" id="metersfeet"/>
+<br>Feet to Meter: <input type="text" id="feetmeters" />
+
+<script>
+    let  feet = 0;
+    let meters = 0;
+function convertToFeet() {
+
+    meters = document.getElementById("meters").value;
+
+    metersToFeet();
+    displayFeet();
+}
+ function convertToMeters() {
+        feet = document.getElementById("feet").value;
+
+        feetToMeters();
+         displayMeters();
+      }
+
+function metersToFeet() {
+        feet = 3.279 * meters;
+        return feet;
+    }
+
+
+ function feetToMeters() {
+     meters = 0.305 * feet;
+     return meters;
+
+}
+
+function displayFeet() {
+    document.getElementById("metersfeet").value = feet;
+}
+function displayMeters() {
+    document.getElementById("feetmeters").value = meters;
+}
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
