@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+     let arr0 = [1,2,"s","f","a","gh","v","uj",3,7,"s","d","s"];
+     let count = 0;
+
+     function countLetter(letter) {
+         for(i=0;i<arr0.length;i++){
+            if (letter === arr0[i]){
+                count++;
+            }
+
+
+         }
+         if (count == 0){
+             count = -1;
+         }
+         return count;
+
+     }
+     alert(countLetter("z"));
+
+
+</script>
+</body>
+</html>
