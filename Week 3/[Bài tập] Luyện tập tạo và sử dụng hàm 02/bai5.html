@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findMin(a,b,c) {
+        let min = a;
+        if (min<b){
+            if (min<c){
+                min = a;
+            } else  if (c<a){
+                min = c;
+            }
+
+        } else {
+         if (b<c){
+             min =b;
+         }   else if (c<b){
+             min = c;
+         }
+        }
+        return min;
+    }
+
+    alert("So be nhat trong 3 so la: " + " "+findMin(4,8,2));
+
+</script>
+
+</body>
+</html>
