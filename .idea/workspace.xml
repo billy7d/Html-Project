@@ -20,7 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 3/[Bài tập] Luyện tập tạo và sử dụng hàm 02/bai 9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 3/[Bài tập] Kiểm tra từ đối xứng/tu-doi-xung.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,15 +41,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dzuFrxnXmVAcxIPPxqHRIB9eOv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -107,11 +104,8 @@
       <workItem from="1594040328442" duration="18000" />
       <workItem from="1594040353395" duration="4664000" />
       <workItem from="1594212587388" duration="3737000" />
-      <workItem from="1594433947131" duration="5032000" />
-      <workItem from="1594475588769" duration="2554000" />
-      <workItem from="1594520203324" duration="9567000" />
-      <workItem from="1594543990626" duration="5249000" />
-      <workItem from="1594559753961" duration="9807000" />
+      <workItem from="1594359065666" duration="623000" />
+      <workItem from="1594362907151" duration="4070000" />
     </task>
     <servers />
   </component>
@@ -129,9 +123,6 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="979" y="182" key="#chuyen-doi-tien-te.js" timestamp="1593527071536">
@@ -211,11 +202,15 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1515" height="261" key="GridCell.Tab.3.right/0.0.1536.824@0.0.1536.824" timestamp="1593579356091" />
-    <state x="922" y="168" key="SettingsEditor" timestamp="1594443972951">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="294" y="68" key="MergeDialog" timestamp="1594602728392">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="294" y="68" key="MergeDialog/0.0.1536.824@0.0.1536.824" timestamp="1594602728392" />
+    <state x="540" y="113" key="SettingsEditor" timestamp="1594257506366">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="540" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594257506366" />
-    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594443972951" />
+    <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594213250366" />
     <state x="-6" y="0" width="653" height="830" key="dock-window-1" timestamp="1594260127710">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -234,10 +229,13 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="986" y="332" key="jetbrains.nodejs.interpreters-dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593527067290" />
-    <state x="28" y="240" key="run.anything.popup" timestamp="1594562494536">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="22" y="190" key="run.anything.popup" timestamp="1593576717326">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="22" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1593576717326" />
-    <state x="28" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594562494536" />
+    <state x="689" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594363027413">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="689" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594363027413" />
   </component>
 </project>
