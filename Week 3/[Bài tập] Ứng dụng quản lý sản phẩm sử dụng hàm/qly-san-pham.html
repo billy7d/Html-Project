@@ -12,6 +12,8 @@
 <button onclick="addProductToList()">Add Product</button>
 <div id="table">
 </div>
+
+<label>Tong so san pham la: </label><span><label id="sosanpham"></label></span>
 <script>
     let productName = ["Sony Xperia","Samsung galaxy","Nokia 6","Xiami Note 4",
         "Iphone 6S","Iphone 8 Plus","Oppo A71"];
@@ -32,7 +34,7 @@
          table += "</table>";
             document.getElementById("table").innerHTML = table;
 
-
+        document.getElementById("sosanpham").innerHTML =  productName.length;
     }
 
 
