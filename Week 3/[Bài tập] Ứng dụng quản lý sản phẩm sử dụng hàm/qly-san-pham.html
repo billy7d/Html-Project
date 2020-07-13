@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="displayProductList()" >
+
+<h1>Display All Product</h1>
+<h3>Product Name</h3>
+<input type="text" id="addP">
+<button onclick="addProductToList()">Add Product</button>
+<div id="table">
+</div>
+<script>
+    let productName = ["Sony Xperia","Samsung galaxy","Nokia 6","Xiami Note 4",
+        "Iphone 6S","Iphone 8 Plus","Oppo A71"];
+    let getProductName = [];
+    let l = 0;
+
+    function displayProductList() {
+        let table = "<table style='border: solid; color: black;'>"
+
+
+            for (i = 0; i < productName.length; i++) {
+
+                table += "<tr>"+"<td>" + i + "</td>" + "<td>" + productName[i] + "</td>" +"<td>"+"<button type='button' id='edit' onclick='replaceProduct("+i+")'>Edit</button>" +"</td>"
+                    +"<td>"+"<button type='button' onclick='delProductOnList("+i+")'>Delete</button>" +"</td>" +"</tr>";
+                getProductName.push(productName[i]);
+            }
+
+         table += "</table>";
+            document.getElementById("table").innerHTML = table;
+
+
+    }
+
+
+    function addProductToList() {
+        let productToAdd = document.getElementById("addP").value;
+        productName.push(productToAdd);
+        displayProductList();
+
+
+    }
+
+    function delProductOnList(i) {
+        switch (i) {
+            case 0:
+                productName.splice(0, 1);
+                break;
+            case 1:
+                productName.splice(1, 1);
+                break;
+            case 2:
+                productName.splice(2, 1);
+                break;
+            case 3:
+                productName.splice(3, 1);
+                break;
+            case 4:
+                productName.splice(4, 1);
+                break;
+            case 5:
+                productName.splice(5, 1);
+                break;
+            case 6:
+                productName.splice(6, 1);
+                break;
+            case 7:
+                productName.splice(7, 1);
+                break;
+            case productName.length - 1:
+                productName.splice(productName.length - 1, 1);
+                break;
+
+        }
+    }
+
+
+        function replaceProduct(i) {
+            let delProduct = prompt("Nhap ten san pham muon doi ten");
+            switch (i) {
+                case 0:
+                    productName.splice(0, 1,delProduct);
+                    break;
+                case 1:
+                    productName.splice(1, 1,delProduct);
+                    break;
+                case 2:
+                    productName.splice(2, 1,delProduct);
+                    break;
+                case 3:
+                    productName.splice(3, 1,delProduct);
+                    break;
+                case 4:
+                    productName.splice(4, 1,delProduct);
+                    break;
+                case 5:
+                    productName.splice(5, 1,delProduct);
+                    break;
+                case 6:
+                    productName.splice(6, 1,delProduct);
+                    break;
+                case 7:
+                    productName.splice(7, 1,delProduct);
+                    break;
+                case productName.length - 1:
+                    productName.splice(productName.length - 1, 1,delProduct);
+                    break;
+
+            }
+                displayProductList();
+        }
+
+
+</script>
+
+</body>
+</html>
