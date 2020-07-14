@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mobileClass = function () {
+        this.batteryStatus = 100;
+        this.onTypingMessageMemory = " ";
+        this.inboxMemory = [];
+        this.sentMessMemory = [];
+
+        this.onRunning = function () {
+           let mobileOn = true;
+
+        }
+
+        this.batteryCharge = function () {
+            this.batteryStatus = 100;
+        }
+
+        this.createMessage = function (nhapvao) {
+            this.onTypingMessageMemory = nhapvao;
+
+
+
+
+        }
+
+        this.receiveMessage = function (receiveMessage) {
+            this.batteryStatus -=10;
+
+            return receiveMessage;
+        }
+
+        this.sendingMessage = function (sendingMessage) {
+            this.batteryStatus -=10;
+
+        }
+
+        this.checkMessage = function () {
+            this.batteryStatus -=10;
+             this.inboxMemory.push(this.onTypingMessageMemory);
+            alert (this.inboxMemory);
+        }
+
+        this.checkSentMessage = function () {
+
+            this.batteryStatus -=10;
+        }
+
+    }
+
+
+let nokia = new mobileClass(90);
+let iphone = new mobileClass(90);
+
+nokia.createMessage("day la tin nhan duoc gui tu nokia");
+alert(iphone.onTypingMessageMemory);
+
+
+
+// nokia.sendingMessage();
+// iphone.receiveMessage();
+// iphone.checkMessage();
+
+
+</script>
+
+</body>
+</html>
