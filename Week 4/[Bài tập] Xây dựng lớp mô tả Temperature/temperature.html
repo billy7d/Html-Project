@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function temperatureClass(c) {
+        this.c = c;
+
+        this.convertCToF = function () {
+           return  (1.8 * c) + 32;
+        }
+
+        this.convertCToK = function () {
+            return c + 273.15;
+        }
+    }
+
+    let Temperature = new temperatureClass(25);
+    alert("Doi tu " + Temperature.c +" " +"do C sang do F la: " + Temperature.convertCToF());
+    alert("Doi tu "+Temperature.c+" "+"do C sang do K la: "+Temperature.convertCToK());
+
+
+
+</script>
+</body>
+</html>
