@@ -13,7 +13,7 @@
         this.creatRec =function  createRectangle() {
             let ctx = document.getElementById("Canvas").getContext("2d");
             ctx.beginPath();
-            ctx.rect(200,200,width,length);
+            ctx.rect(300,300,length,width);
             ctx.stroke();
         }
         this.recArea = function rectangleArea() {
@@ -24,11 +24,11 @@
 
         }
     }
-    let Myrec = new Rectangle(10,5);
-    let chuvi = Myrec.recArea();
-    let dientich = Myrec.recPeri();
-    alert("chuvi" + chuvi);
-    alert("dientich"+ dientich);
+    let Myrec = new Rectangle(100,50);
+    let chuvi = Myrec.recPeri();
+    let dientich = Myrec.recArea();
+    alert("chu vi " + chuvi);
+    alert("dien tich "+ dientich);
     Myrec.creatRec();
 
 
