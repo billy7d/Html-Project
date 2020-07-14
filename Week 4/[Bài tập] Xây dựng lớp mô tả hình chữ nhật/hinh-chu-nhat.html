@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="Canvas" width="800px" height="600px" style="border: 1px solid #d3d3d3"></canvas>
+<script>
+    function Rectangle(length,width) {
+        this.length = length;
+        this.width = width;
+        this.creatRec =function  createRectangle() {
+            let ctx = document.getElementById("Canvas").getContext("2d");
+            ctx.beginPath();
+            ctx.rect(200,200,width,length);
+            ctx.stroke();
+        }
+        this.recArea = function rectangleArea() {
+            return this.length* this.width;
+        }
+        this.recPeri = function recttanglePerimeter() {
+            return (this.length + this.width) * 2;
+
+        }
+    }
+    let Myrec = new Rectangle(10,5);
+    let chuvi = Myrec.recArea();
+    let dientich = Myrec.recPeri();
+    alert("chuvi" + chuvi);
+    alert("dientich"+ dientich);
+    Myrec.creatRec();
+
+
+
+
+</script>
+</body>
+</html>
