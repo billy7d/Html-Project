@@ -13,7 +13,7 @@
         this.creatRec =function  createRectangle() {
             let ctx = document.getElementById("Canvas").getContext("2d");
             ctx.beginPath();
-            ctx.rect(300,300,length,width);
+            ctx.rect(300,300,this.length,this.width);
             ctx.stroke();
         }
         this.recArea = function rectangleArea() {

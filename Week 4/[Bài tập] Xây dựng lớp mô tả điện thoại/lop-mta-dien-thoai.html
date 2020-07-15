@@ -8,58 +8,67 @@
 <body>
 <script>
     let mobileClass = function () {
-        this.batteryStatus = 100;
-        this.onTypingMessageMemory = " ";
-        this.inboxMemory = [];
-        this.sentMessMemory = [];
+        this.Battery = 100;
+        this.Draft = " ";
+        this.Inbox = [];
+        this.Sent = [];
+        this.powerOn = false;
 
-        this.onRunning = function () {
-           let mobileOn = true;
+        this.checkPowerOn = function () {
+            if (this.powerOn = false){
+                alert("Dien thoai dang tat");
+                return false;
+        } else {
+                return  true;
+            }
+        }
+        this.turnOn = function () {
+            return this.powerOn = true;
+        }
+        this.turnOff = function () {
+            return this.powerOn = false;
+        }
+        this.batterCharge = function () {
+            return this.Battery = 100;
+        }
+        this.soanTN = function () {
+            // if (this.powerOn = false){return;}
+            let nhap = prompt("Viết tin nhắn");
+            this.Draft = nhap;
+        }
+        this.guiTN = function (Phone) {
+            // if (this.powerOn = false){return;}
 
+            let TN = this.Draft;
+            Phone.nhanTN(TN);
+            this.Sent.push(TN);
+            this.Draft = "";
         }
 
-        this.batteryCharge = function () {
-            this.batteryStatus = 100;
+        this.nhanTN = function (TN) {
+            // if (this.powerOn = false){return;}
+            this.Inbox.push(TN);
         }
-
-        this.createMessage = function (nhapvao) {
-            this.onTypingMessageMemory = nhapvao;
-
-
-
-
-        }
-
-        this.receiveMessage = function (receiveMessage) {
-            this.batteryStatus -=10;
-
-            return receiveMessage;
-        }
-
-        this.sendingMessage = function (sendingMessage) {
-            this.batteryStatus -=10;
-
-        }
-
-        this.checkMessage = function () {
-            this.batteryStatus -=10;
-             this.inboxMemory.push(this.onTypingMessageMemory);
-            alert (this.inboxMemory);
-        }
-
-        this.checkSentMessage = function () {
-
-            this.batteryStatus -=10;
+        this.xemTN = function () {
+            // if (this.powerOn = false){return;}
+             for (i=0;i<this.Inbox.length;i++){
+                 document.write("Message thu " + (i+1) + this.Inbox[i] + "<br>");
+             }
         }
 
     }
 
 
-let nokia = new mobileClass(90);
-let iphone = new mobileClass(90);
+let nokia = new mobileClass();
+let iphone = new mobileClass();
 
-nokia.createMessage("day la tin nhan duoc gui tu nokia");
-alert(iphone.onTypingMessageMemory);
+nokia.turnOn();
+iphone.turnOn();
+nokia.soanTN();
+nokia.guiTN(iphone);
+console.log(iphone);
+
+
 
 
 
