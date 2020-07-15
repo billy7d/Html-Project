@@ -20,8 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Game đơn giản - di chuyển đối tượng/di-chuyen-doi-tuong.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 4/[Bài tập] Game đơn giản - di chuyển đối tượng/di-chuyen-doi-tuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Game đơn giản - di chuyển đối tượng/di-chuyen-doi-tuong.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +32,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -41,7 +41,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1dzuFrxnXmVAcxIPPxqHRIB9eOv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -109,8 +111,7 @@
       <workItem from="1594621831487" duration="7508000" />
       <workItem from="1594692338077" duration="9736000" />
       <workItem from="1594708746364" duration="9200000" />
-      <workItem from="1594797277327" duration="2938000" />
-      <workItem from="1594801043166" duration="599000" />
+      <workItem from="1594797277327" duration="299000" />
     </task>
     <servers />
   </component>
@@ -216,10 +217,10 @@
     </state>
     <state x="540" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594775600861" />
     <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594213250366" />
-    <state x="-2" y="0" width="689" height="808" key="dock-window-1" timestamp="1594809074560">
+    <state x="-2" y="0" width="739" height="827" key="dock-window-1" timestamp="1594721117816">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-2" y="0" width="689" height="808" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1594809074560" />
+    <state x="-2" y="0" width="739" height="827" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1594721117816" />
     <state x="302" y="0" width="1159" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1593957144006" />
     <state x="-6" y="0" width="694" height="802" key="dock-window-2" timestamp="1594270170995">
       <screen x="0" y="0" width="1536" height="824" />
