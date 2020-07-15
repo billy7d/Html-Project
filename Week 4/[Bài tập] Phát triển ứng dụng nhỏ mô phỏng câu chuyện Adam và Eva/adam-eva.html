@@ -29,15 +29,20 @@
         this.setGender = function (gender) {
             this.gender = gender;
         }
-        this.checkApple = function () {
-            if (this.getWeight() > 0){
-                return true;
-            }
+        this.checkApple = function (apple) {
+            let appleWeight = apple.getWeight();
+                if (appleWeight > 0){
+                    return true;
+                }
+               return false;
         }
         this.eat = function (apple) {
-            apple.decrease();
-            this.humanGetWeight();
-        }
+                if (this.checkApple() == true) {
+                    apple.decrease();
+                    this.humanGetWeight();
+                }
+         }
+
         this.say = function () {
             let say = prompt("Người nói");
             alert(this.name +  " noi: " + say);
@@ -60,12 +65,17 @@
     let adam = new Human("Adam","male",60);
     let eva = new Human("Eva","female",50);
 
-    adam.say();
+    // adam.say();
+    // adam.eat(apple);
+    // eva.eat(apple);
+    // console.log(adam.weight);
+    // console.log(eva.weight);
+    // console.log(apple.getWeight());
+
+    apple.weight = 0;
     adam.eat(apple);
-    eva.eat(apple);
-    console.log(adam.weight);
-    console.log(eva.weight);
-    console.log(apple.getWeight());
+    console.log(apple.weight);
+    console.log(adam.checkApple(apple));
 
 
 </script>
