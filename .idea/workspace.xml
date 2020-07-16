@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Phát triển ứng dụng mô phỏng lại quá trình mèo bắt chuột và ăn chuột/meo-chuot.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Phát triển chương trình sử dụng Remote để điều khiển Tivi/remote-tivi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Week 4/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva/adam-eva.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Phát triển ứng dụng nhỏ mô phỏng câu chuyện Adam và Eva/adam-eva.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Week 4/[Bài tập] Phát triển ứng dụng mô phỏng lại quá trình mèo bắt chuột và ăn chuột/meo-chuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/Week 4/[Bài tập] Phát triển ứng dụng mô phỏng lại quá trình mèo bắt chuột và ăn chuột/meo-chuot.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,7 @@
       <workItem from="1594708746364" duration="9200000" />
       <workItem from="1594797277327" duration="2938000" />
       <workItem from="1594801043166" duration="599000" />
-      <workItem from="1594865380713" duration="475000" />
+      <workItem from="1594865380713" duration="4828000" />
     </task>
     <servers />
   </component>
@@ -218,19 +218,20 @@
     </state>
     <state x="540" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594775600861" />
     <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594213250366" />
-    <state x="-2" y="0" width="689" height="808" key="dock-window-1" timestamp="1594809074560">
+    <state x="0" y="0" width="812" height="802" key="dock-window-1" timestamp="1594866304677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-2" y="0" width="689" height="808" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1594809074560" />
+    <state x="0" y="0" width="812" height="802" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1594866304677" />
     <state x="302" y="0" width="1159" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1593957144006" />
-    <state x="-6" y="0" width="694" height="802" key="dock-window-2" timestamp="1594270170995">
+    <state x="-5" y="0" width="634" height="808" key="dock-window-2" timestamp="1594866304677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-6" y="0" width="694" height="802" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1594270170995" />
+    <state x="-5" y="0" width="634" height="808" key="dock-window-2/0.0.1536.824@0.0.1536.824" timestamp="1594866304677" />
     <state x="-6" y="0" width="667" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1593530930397" />
-    <state x="-7" y="0" width="668" height="1047" key="dock-window-3" timestamp="1593530930397">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-6" y="0" width="704" height="830" key="dock-window-3" timestamp="1594867911044">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="-6" y="0" width="704" height="830" key="dock-window-3/0.0.1536.824@0.0.1536.824" timestamp="1594867911044" />
     <state x="-7" y="0" width="668" height="1047" key="dock-window-3/0.0.1920.1040@0.0.1920.1040" timestamp="1593530930397" />
     <state x="986" y="332" key="jetbrains.nodejs.interpreters-dialog" timestamp="1593527067290">
       <screen x="0" y="0" width="1920" height="1040" />

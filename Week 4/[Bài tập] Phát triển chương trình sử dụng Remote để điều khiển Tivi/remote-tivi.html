@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Remote = function (series) {
+        this.series = series;
+        this.switchChannel = function (numb) {
+            tivi.curChannel = numb;
+        }
+        this.adjustVolum = function (numb) {
+            tivi.curVolum += numb;
+        }
+        this.turnOffTV  = function () {
+            tivi.onOff = "Off";
+            alert("Tivi da: " + tivi.onOff);
+        }
+        this.turnOnTV = function () {
+            tivi.onOff = "On";
+        }
+    }
+
+    let TiVi = function (curChannel,curVolum,onOff) {
+        this.curChannel = curChannel;
+        this.curVolum = curVolum;
+        this.onOff = onOff;
+        this.switchChannel = function (numb) {
+            this.curChannel = numb;
+        }
+        this.adjustVolum = function (numb) {
+            this.curVolum = numb;
+        }
+        this.turnOn = function () {
+            this.onOff = "On";
+        }
+        this.turnOff = function () {
+            this.onOff = "Off";
+        }
+    }
+    let remote = new Remote(1234);
+    let tivi = new TiVi(3,50,"Off");
+
+    tivi.turnOn();
+    tivi.switchChannel(7);
+    console.log(tivi.curChannel);
+    remote.switchChannel(3);
+    console.log(tivi.curChannel);
+    remote.adjustVolum(2);
+    console.log(tivi.curVolum);
+    remote.turnOffTV();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
