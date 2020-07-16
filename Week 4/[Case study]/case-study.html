@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1000" height="500" style="border:1px solid #d3d3d3;">
+</canvas>
+<script>
+
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    window.addEventListener("keydown", moveButton);
+    let Tron = function (x,y,R) {
+        this.x =x;
+        this.y =y;
+        this.R = R;
+        this.dx =20;
+        this.dy= 20;
+        this.creatTron = function () {
+            ctx.clearRect(0,0,1000,500);
+            ctx.beginPath();
+            ctx.arc(this.x,this.y,this.R,0,2*Math.PI);
+            ctx.stroke();
+            ctx.fill();
+        };
+        this.position = function () {
+            this.x += this.dx;
+            this.y += this.dy;
+            if (this.x -this.R <= 0){
+                this.x = this.R;
+                this.dx = 20;
+            }
+            if (this.x + this.R > 1000){
+                this.x = 1000- this.R;
+                this.dx = -20;
+            }
+            if (this.y -this.R <= 0){
+                this.y = this.R;
+                this.dy = 20;
+            }
+            if (this.y + this.R > 500){
+                this.y = 500 - this.R;
+                this.dy = -20;
+            }
+        };
+        this.move = function () {
+            this.position();
+            this.creatTron();
+        }
+    }
+    function moveButton (evt){
+        switch (evt.keyCode) {
+            case 37:
+                circle.dx = -20;
+                circle.dy = 0;
+                break;
+            case 38:
+                circle.dx = 0;
+                circle.dy = -20;
+                break;
+            case 39:
+                circle.dx = 20;
+                circle.dy = 0;
+                break;
+            case 40:
+                circle.dx = 0;
+                circle.dy = 20;
+                break;
+        }
+    }
+    let circle = new Tron(50,50,50);
+    circle.creatTron();
+    setInterval(()=>{circle.move()},50)
+</script>
+</body>
+</html>
