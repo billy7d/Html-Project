@@ -25,8 +25,8 @@
             sound = "Meo Meo";
             this.sound = sound;
         }
-        this.getRat = function () {
-            if (this.maxSpeed > this.speed){
+        this.getRat = function (rat) {
+            if (this.maxSpeed > rat.speed){
                 return true;
             }
         }
