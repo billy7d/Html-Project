@@ -11,13 +11,13 @@
 
     var ctx = document.getElementById("myCanvas").getContext("2d");
     window.addEventListener("keydown", moveButton);
-    let Tron = function (x,y,R) {
-        this.x =x;
-        this.y =y;
+    let Circle = function (x,y,R) {
+        this.x = x;
+        this.y = y;
         this.R = R;
-        this.dx =20;
-        this.dy= 20;
-        this.creatTron = function () {
+        this.dx = 20;
+        this.dy = 20;
+        this.creatCircle = function () {
             ctx.clearRect(0,0,1000,500);
             ctx.beginPath();
             ctx.arc(this.x,this.y,this.R,0,2*Math.PI);
@@ -69,8 +69,8 @@
                 break;
         }
     }
-    let circle = new Tron(50,50,50);
-    circle.creatTron();
+    let circle = new Circle(50,50,50);
+    circle.creatCircle();
     setInterval(()=>{circle.move()},50)
 </script>
 </body>
