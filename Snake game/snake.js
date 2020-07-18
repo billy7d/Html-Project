@@ -1,13 +1,39 @@
-let c = document.getElementById("canvas");
-let ctx = c.getContext("2d");
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+let snake = new Snake();
+let food = new Food();
+let gameOver = false;
+document.addEventListener("keydown", snake.snakeMove);
+
+
+
+
 
 let Snake = function () {
-    this.speed = 10;
-    this.bodyLarge = 20;
-
-    this.snakeMove = function () {
-
+    this.bodyLarge = 23;
+    this.snakeBody = [];
+    this.StartPos = {x: 10, y: 10};
+    this.Direct = {x:0, y:0};        //Direction of the snake;
+    
+    this.snakeMove = function (evt) {
+        switch (evt.keyCode) {
+            case 37:
+                this.Direct = {x:-1,y:0};
+                break;
+            case 38:
+                this.Direct = {x:0,y:-1};
+                break;
+            case 39:
+                this.Direct = {x:+1,y:0};
+                break;
+            case 40:
+                this.Direct = {x:0,y:1};
+                break;
+        }
+        this.StartPos.x += this.Direct.x;     //move snake to new position
+        this.StartPos.x += this.Direct.x;
     }
+
     this.snakeEat = function () {
 
     }
@@ -20,7 +46,8 @@ let Snake = function () {
 
 
 let Food = function () {
-    this.size = 20;
+    this.size = 23;
+    this.appleDirect = {x:10,y:10};
 
     this.foodMove = function () {
         ctx.beginPath();
@@ -33,5 +60,7 @@ let Food = function () {
     }
 }
 
+//viet them chuc nang dap tuong vao chet
+//dap vao duoi  chet.
 
 

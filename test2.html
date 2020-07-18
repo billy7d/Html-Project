@@ -11,29 +11,20 @@ let ctx = c.getContext("2d");
 let d;
 let score = 0;
 let gameOver = false;
-//audio
-let dead = new Audio();
-let eat = new Audio();
-let up = new Audio();
-let right = new Audio();
-let left = new Audio();
-let down = new Audio();
 
-dead.src = "audio/dead.mp3";
-eat.src = "audio/eat.mp3";
-up.src = "audio/up.mp3";
-right.src = "audio/right.mp3";
-left.src = "audio/left.mp3";
-down.src = "audio/down.mp3";
+
+
+
 let Snake = function () {
 this.spees = 10;
 this.array = [];
 this.radius = 10;
 this.getArray = function () {
-this.array[0] = {
+this.array[0] = {           //do dai ban dau cua sau
 x: 8 * 10, y: 8 * 10
 }
 };
+
 this.taoSnake = taoSnake;
 this.taoDuoi = taoDuoi;
 this.headVsArray = headVsArray;
