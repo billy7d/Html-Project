@@ -1,7 +1,8 @@
-let ctx = document.getElementById("canvas").getContext("2d");
+let c = document.getElementById("canvas");
+let ctx = c.getContext("2d");
 
 let Snake = function () {
-    this.snakeSpeed = 10;
+    this.speed = 10;
     this.bodyLarge = 20;
 
     this.snakeMove = function () {
@@ -17,15 +18,20 @@ let Snake = function () {
     }
 }
 
+
 let Food = function () {
     this.size = 20;
 
     this.foodMove = function () {
         ctx.beginPath();
-        ctx.rect((Math.floor(Math.random()*600) + 20),(Math.floor(Math.random()*600) + 20),this.size,this.size);
+        ctx.rect(Math.floor(Math.random() * 600) + 20,Math.floor(Math.random() * 600) + 20,
+            this.size,this.size);
         ctx.stroke();
     }
     this.foodBorn = function () {
-
+        
     }
 }
+
+
+

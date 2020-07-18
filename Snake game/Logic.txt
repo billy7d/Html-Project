@@ -1,0 +1,29 @@
+Tạo 2 lớp:
+
+1. Game init: 
+-Khung boardgame.
+-Rắn chạm đầu vào khung thì endgame.
+-Vẽ rắn.
+
+
+
+
+2. Lớp Snake:
+-Tốc độ: Không đổi.
+-Chiều rộng rắn: Không đổi.
+-Chiều dài: Có đổi sau khi ăn Food.
+
++Di chuyển + dâm đầu vào đuôi
+
++Ăn Food + tạo đuôi
+
+
+3. Lớp Food:
+-Chiều dài
+-Chiều rộng
+
++Di chuyển: random
++Xuất hiện: Mất đi sau khi bị ăn và xuất hiện lại trên board.
+
+
+
