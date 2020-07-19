@@ -25,13 +25,13 @@
 
     // game world
     var gridSize = (tileSize = 20); // 20 x 20 = 400
-    var nextX = (nextY = 0);
+    var nextX = (nextY = 0);        //dX, dY
 
     // snake
-    var defaultTailSize = 3;
+    var defaultTailSize = 3;        //initsize
     var tailSize = defaultTailSize;
     var snakeTrail = [];
-    var snakeX = (snakeY = 10);
+    var snakeX = (snakeY = 10);     //toa do ban dau cua ran
 
     // apple
     var appleX = (appleY = 15);
@@ -64,6 +64,11 @@
             appleX = Math.floor(Math.random() * gridSize);
             appleY = Math.floor(Math.random() * gridSize);
         }
+        //set snake trail
+        snakeTrail.push({ x: snakeX, y: snakeY });
+        while (snakeTrail.length > tailSize) {
+            snakeTrail.shift();
+
 
         //paint background
         ctx.fillStyle = "yellow";
@@ -92,34 +97,12 @@
         ctx.fillStyle = "red";
         ctx.fillRect(appleX * tileSize, appleY * tileSize, tileSize, tileSize);
 
-        //set snake trail
-        snakeTrail.push({ x: snakeX, y: snakeY });
-        while (snakeTrail.length > tailSize) {
-            snakeTrail.shift();
+
         }
     }
 
     // input
-    function keyDownEvent(e) {
-        switch (e.keyCode) {
-            case 37:
-                nextX = -1;
-                nextY = 0;
-                break;
-            case 38:
-                nextX = 0;
-                nextY = -1;
-                break;
-            case 39:
-                nextX = 1;
-                nextY = 0;
-                break;
-            case 40:
-                nextX = 0;
-                nextY = 1;
-                break;
-        }
-    }
+
 </script>
 </body>
 </html>

@@ -1,66 +1,97 @@
 let canvas = document.getElementById("canvas");
 let ctx = canvas.getContext("2d");
-let snake = new Snake();
-let food = new Food();
+
 let gameOver = false;
-document.addEventListener("keydown", snake.snakeMove);
+let box = 23;
 
 
 
 
 
 let Snake = function () {
-    this.bodyLarge = 23;
-    this.snakeBody = [];
-    this.StartPos = {x: 10, y: 10};
-    this.Direct = {x:0, y:0};        //Direction of the snake;
-    
+    this.bodyLarge = 23;  // bang 1 box trong game.
+    this.snakeBody = [];        //mang the hien toa do x,y cua ran.
+    this.initialLength = 3;
+    this.x = 10;           // set vi tri ban dau cho snake.
+    this.y = 10;
+    this.dx = box;          // set huong di chuyen dau tien cua snake.
+    this.dy = 0;
+
     this.snakeMove = function (evt) {
         switch (evt.keyCode) {
             case 37:
-                this.Direct = {x:-1,y:0};
+                this.dx = -box;
+                this.dy = 0;
                 break;
             case 38:
-                this.Direct = {x:0,y:-1};
+                this.dx = 0;
+                this.dy = -box;
                 break;
             case 39:
-                this.Direct = {x:+1,y:0};
+                this.dx = +box;
+                this.dy = 0;
                 break;
             case 40:
-                this.Direct = {x:0,y:1};
+                this.dx = 0;
+                this.dy = +box;
                 break;
         }
-        this.StartPos.x += this.Direct.x;     //move snake to new position
-        this.StartPos.x += this.Direct.x;
+        // this.x += this.dx;     // moi lan lap se di chuyen snake theo + dx, dy.
+        // this.y += this.dx;
+
+        this.snakeBody.unshift({x: this.x, y: this.y});              //them vao dau 1 ptu va bot o duoi di 1 ptu de ran dchuyen
+        if (this.snakeBody.length > this.initialLength) {
+            this.snakeBody.pop();
+        }
+
     }
 
     this.snakeEat = function () {
 
     }
     this.snakeBorn = function () {
-        ctx.beginPath();
-        ctx.rect(300,300,this.bodyLarge,this.bodyLarge);
-        ctx.stroke();
+        // for (i = 0; i < this.snakeBody.length; i++) {
+
+            ctx.beginPath();
+            ctx.fillStyle = "black";
+            ctx.fillRect(10 * this.bodyLarge, 10 * this.bodyLarge
+                ,this.bodyLarge,this.bodyLarge);
+
+            ctx.strokeRect(10 * this.bodyLarge, 10 * this.bodyLarge
+                ,this.bodyLarge,this.bodyLarge);
+            ctx.strokeStyle = "black";
+        // }
     }
 }
 
 
-let Food = function () {
-    this.size = 23;
-    this.appleDirect = {x:10,y:10};
+// let Food = function () {
+//     this.size = 23;
+//     this.appleDirect = {x:10,y:10};
+//
+//     this.foodMove = function () {
+//         ctx.beginPath();
+//         ctx.rect(Math.floor(Math.random() * 600) + 20,Math.floor(Math.random() * 600) + 20,
+//             this.size,this.size);
+//         ctx.stroke();
+//     }
+//     this.foodBorn = function () {
+//
+//     }
+// }
 
-    this.foodMove = function () {
-        ctx.beginPath();
-        ctx.rect(Math.floor(Math.random() * 600) + 20,Math.floor(Math.random() * 600) + 20,
-            this.size,this.size);
-        ctx.stroke();
-    }
-    this.foodBorn = function () {
-        
-    }
+
+window.onload = function() {
+
+
+    document.addEventListener("keydown", snake.snakeMove);
+
+    setInterval(init,900/8);
 }
+let snake = new Snake();
+function init() {
+    snake.snakeMove();
+    snake.snakeBorn();
 
-//viet them chuc nang dap tuong vao chet
-//dap vao duoi  chet.
-
+}
 
