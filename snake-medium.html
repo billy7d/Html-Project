@@ -20,18 +20,18 @@
 
         // render X times per second
         var x = 8;
-        setInterval(draw, 900 / x);
+        setInterval(draw, 1000 / x);
     };
 
     // game world
     var gridSize = (tileSize = 20); // 20 x 20 = 400
-    var nextX = (nextY = 0);        //dX, dY
+    var nextX = (nextY = 0);
 
     // snake
-    var defaultTailSize = 3;        //initsize
+    var defaultTailSize = 3;
     var tailSize = defaultTailSize;
     var snakeTrail = [];
-    var snakeX = (snakeY = 10);     //toa do ban dau cua ran
+    var snakeX = (snakeY = 10);
 
     // apple
     var appleX = (appleY = 15);
@@ -39,7 +39,7 @@
     // draw
     function draw() {
         // move snake in next pos
-        snakeX += nextX;   // NextX , NextY direction of the snake
+        snakeX += nextX;
         snakeY += nextY;
 
         // snake over game world?
@@ -58,25 +58,20 @@
         }
 
         //snake bite apple?
-        if (snakeX === appleX && snakeY === appleY) {
+        if (snakeX == appleX && snakeY == appleY) {
             tailSize++;
 
             appleX = Math.floor(Math.random() * gridSize);
             appleY = Math.floor(Math.random() * gridSize);
         }
-        //set snake trail
-        snakeTrail.push({ x: snakeX, y: snakeY });
-        while (snakeTrail.length > tailSize) {
-            snakeTrail.shift();
 
 
-        //paint background
-        ctx.fillStyle = "yellow";
+       // paint background
+        ctx.fillStyle = "black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // paint snake
         ctx.fillStyle = "green";
-        ctx.strokeStyle ="black";
         for (var i = 0; i < snakeTrail.length; i++) {
             ctx.fillRect(
                 snakeTrail[i].x * tileSize,
@@ -85,10 +80,8 @@
                 tileSize
             );
 
-            ctx.strokeRect(snakeTrail[i].x * tileSize,snakeTrail[i].y * tileSize,gridSize,gridSize);
-
             //snake bites it's tail?
-            if (snakeTrail[i].x === snakeX && snakeTrail[i].y ===snakeY) {
+            if (snakeTrail[i].x == snakeX && snakeTrail[i].y == snakeY) {
                 tailSize = defaultTailSize;
             }
         }
@@ -97,12 +90,34 @@
         ctx.fillStyle = "red";
         ctx.fillRect(appleX * tileSize, appleY * tileSize, tileSize, tileSize);
 
-
+        //set snake trail
+        snakeTrail.unshift({ x: snakeX, y: snakeY });
+        while (snakeTrail.length > tailSize) {
+            snakeTrail.pop();
         }
     }
 
     // input
-
+    function keyDownEvent(e) {
+        switch (e.keyCode) {
+            case 37:
+                nextX = -1;
+                nextY = 0;
+                break;
+            case 38:
+                nextX = 0;
+                nextY = -1;
+                break;
+            case 39:
+                nextX = 1;
+                nextY = 0;
+                break;
+            case 40:
+                nextX = 0;
+                nextY = 1;
+                break;
+        }
+    }
 </script>
 </body>
 </html>
