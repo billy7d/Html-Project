@@ -65,14 +65,14 @@
             appleY = Math.floor(Math.random() * gridSize);
         }
 
-
-       // paint background
+        //paint background
         ctx.fillStyle = "black";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         // paint snake
         ctx.fillStyle = "green";
         for (var i = 0; i < snakeTrail.length; i++) {
+            ctx.beginPath();
             ctx.fillRect(
                 snakeTrail[i].x * tileSize,
                 snakeTrail[i].y * tileSize,
@@ -91,9 +91,9 @@
         ctx.fillRect(appleX * tileSize, appleY * tileSize, tileSize, tileSize);
 
         //set snake trail
-        snakeTrail.unshift({ x: snakeX, y: snakeY });
+        snakeTrail.push({ x: snakeX, y: snakeY });
         while (snakeTrail.length > tailSize) {
-            snakeTrail.pop();
+            snakeTrail.shift();
         }
     }
 
@@ -101,7 +101,7 @@
     function keyDownEvent(e) {
         switch (e.keyCode) {
             case 37:
-                nextX = -1;
+                nextX = -1; //snakePos.x +=
                 nextY = 0;
                 break;
             case 38:
