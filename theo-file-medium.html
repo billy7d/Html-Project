@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="529" height="529" style="border: 1px solid black"></canvas>
+
+<script>
+    let canvas = document.getElementById("canvas");
+    let ctx = canvas.getContext("2d");
+
+    let Snake = function () {
+        this.grid = 23;
+        this.sizeBodyBanDau = 23*4;
+        this.toaDoThan = [];
+        this.toaDoRan = {x:10*23 , y:10*23};
+        this.dX = 0;
+        this.dY = 0;
+
+        this.move = function () {
+            this.toaDoRan.x += this.dX;
+            this.toaDoRan.y +=this.dY;
+            //viet them di chuyen dX, dY.
+        }
+        this.veRan = function () {
+            ctx.beginPath();
+            ctx.fillStyle='black';
+            ctx.rect(snake.toaDoRan.x,snake.toaDoRan.y,this.grid,this.grid);
+            ctx.stroke();
+        }
+
+    }
+
+    let snake = new Snake();
+    snake.veRan();
+
+
+    let Apple = function () {
+        this.toaDoBanDau ={x:8*23, y:8*23};
+    }
+
+
+</script>
+</body>
+</html>

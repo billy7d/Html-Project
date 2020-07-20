@@ -6,11 +6,11 @@
 </head>
 <body>
 <canvas id="myCanvas" style="border: 1px solid" height="500" width="500"></canvas>
+</body>
+</html>
 <script>
-    let canvas = document.getElementById("myCanvas");
-    let ctx = canvas.getContext("2d");
     function Snake(iD,x,y) {
-        this.iD = iD            //dung de set dau voi duoi
+        this.iD = iD            //dung de set dau voi duoi;
         this.x = x;
         this.y = y;
         this.dx = 30;
@@ -24,13 +24,13 @@
             ctx.fill();
             ctx.closePath();
         }
-        this.selectDirection = function () {
+        this.selectDirection = function (item) {
             if (this.iD === 0){                         //iD 0 la dau ran.
                 this.x = this.x + this.dx;
                 this.y = this.y + this.dy;
             } else {                                    //iD khac 0 la vung than.
-                this.x = snake[this.iD - 1].x;
-                this.y = snake[this.iD - 1].y;
+                this.x = item[this.iD - 1].x;
+                this.y = item[this.iD - 1].y;
             }
         }
     }
@@ -39,7 +39,6 @@
     snake[1] = new Snake(1,270,300);
     snake[2] = new Snake(2,240,300);
     snake[3] = new Snake(3,210,300);
-​
     function directSnake(evt) {
         switch (evt.keyCode) {
             case 37:
@@ -63,16 +62,16 @@
     function moveSnake(){
         ctx.clearRect(0,0,canvas.width,canvas.height);
         for (let i = snake.length-1; i >= 0 ; i--) {
-            snake[i].selectDirection();
+            snake[i].selectDirection(snake);
         }
         for (let i = 0; i <snake.length ; i++) {
             snake[i].show();
         }
     }
+    let canvas = document.getElementById("myCanvas");
+    let ctx = canvas.getContext("2d");
     setInterval(moveSnake,300);
     window.addEventListener("keydown", directSnake);
 
-</script>
 
-</body>
-</html>
+</script>
