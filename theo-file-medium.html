@@ -63,7 +63,8 @@
 
 
     let Apple = function () {
-        this.toaDoBanDau ={x:8*23, y:8*23};
+        this.x = (Math.floor(Math.random() * grid)) * 23;
+        this.y = (Math.floor(Math.random() * grid)) * 23;
     }
 
     function huongRanDiChuyenTheoNut(evt) {
@@ -89,46 +90,45 @@
 
 
     let snake = new Snake();
-    let apple = new Apple();
 
 
-    function gameInit() {
-        snake.huongDiChuyen();
+    //
+    // function gameInit() {
+    //     snake.huongDiChuyen();
+    //
+    //     if (snake.toaDoRan.x < 0) {
+    //         alert("Game over");
+    //         clearInterval(game);
+    //     }
+    //     if (snake.toaDoRan.x >= canvas.width) {
+    //         alert("Game over");
+    //         clearInterval(game);
+    //     }
+    //     if (snake.toaDoRan.y < 0) {
+    //         alert("Game over");
+    //         clearInterval(game);
+    //     }
+    //     if (snake.toaDoRan.y >= canvas.height) {
+    //         alert("Game over");
+    //         clearInterval(game);
+    //     }
+    //     snake.eat(apple);
+    //     snake.veRan();
+    // }
+    //
+    // function gameInit(){
+    //     ctx.clearRect(0,0,canvas.width,canvas.height);
 
-        if (snake.toaDoRan.x < 0) {
-            alert("Game over");
-            clearInterval(game);
-        }
-        if (snake.toaDoRan.x >= canvas.width) {
-            alert("Game over");
-            clearInterval(game);
-        }
-        if (snake.toaDoRan.y < 0) {
-            alert("Game over");
-            clearInterval(game);
-        }
-        if (snake.toaDoRan.y >= canvas.height) {
-            alert("Game over");
-            clearInterval(game);
-        }
-        snake.eat(apple);
-        snake.veRan();
-    }
-
-    function gameInit(){
-        ctx.clearRect(0,0,canvas.width,canvas.height);
 
 
 
-    }
     // if (this.toaDoRan.x == apple.toaDoBanDau.x && this.toaDoRan.y == apple.toaDoBanDau.y){
     //     this.doDaiBodyBanDau +=1;
     //
-    //     apple.toaDoBanDau.x = (Math.floor(Math.random() * grid)) * 23;
-    //     apple.toaDoBanDau.y = (Math.floor(Math.random() * grid)) * 23;
 
 
-    let game = setInterval(gameInit,1000/8);
+
+    // let game = setInterval(gameInit,1000/8);
 gameInit();
 
 </script>
