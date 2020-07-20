@@ -10,37 +10,126 @@
 <script>
     let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
+    window.addEventListener("keydown",huongRanDiChuyenTheoNut);
 
     let Snake = function () {
-        this.grid = 23;
-        this.sizeBodyBanDau = 23*4;
+        this.grid = 23;                                     //snake width;
+        this.doDaiBodyBanDau = 3;                            //do dai ban dai = 4 grid.
         this.toaDoThan = [];
-        this.toaDoRan = {x:10*23 , y:10*23};
-        this.dX = 0;
+        this.toaDoDauRan = [{x:230 , y:230}];                // = toa do dau ran.
+        this.dX = 23;                                   //di chuyen dau game.
         this.dY = 0;
 
-        this.move = function () {
-            this.toaDoRan.x += this.dX;
-            this.toaDoRan.y +=this.dY;
-            //viet them di chuyen dX, dY.
-        }
-        this.veRan = function () {
-            ctx.beginPath();
-            ctx.fillStyle='black';
-            ctx.rect(snake.toaDoRan.x,snake.toaDoRan.y,this.grid,this.grid);
-            ctx.stroke();
+        this.huongDiChuyen = function () {
+            this.toaDoDauRan.x += this.dX;
+            this.toaDoDauRan.y += this.dY;
         }
 
+        this.veRan = function () {
+                //set toaDoThan
+            // ctx.clearRect(0,0,canvas.width,canvas.height);
+            // this.toaDoRan.x += this.dX;
+            // this.toaDoRan.y +=this.dY;
+
+                ctx.beginPath();
+                ctx.fillStyle='black';
+                ctx.rect(this.toaDoDauRan.x, this.toaDoDauRan.y, this.grid, this.grid);
+                ctx.stroke();
+            }
+        }
+        this.diChuyenToaDoThan = function () {
+            for (let i = this.toaDoThan.length - 1; i >= 0; i++) {
+                ctx.beginPath();
+                this.toaDoThan[i].x = this.toaDoThan[i - 1].x;
+                this.toaDoThan[i].y = this.toaDoThan[i - 1].y;
+            }
+            for (let i = 0; i < this.toaDoThan.length; i++) {
+                ctx.rect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
+                ctx.stroke();
+            }
+        this.dauChamThan = function () {
+            for (i = 1; i < this.toaDoThan.length; i++) {
+                if (this.toaDoDauRan.x == this.toaDoThan[i].x  && this.toaDoDauRan.y == this.toaDoThan[i].y) {
+                alert("Game over");
+                }
+            }
+
+
+        }
     }
 
-    let snake = new Snake();
-    snake.veRan();
+
+
 
 
     let Apple = function () {
         this.toaDoBanDau ={x:8*23, y:8*23};
     }
 
+    function huongRanDiChuyenTheoNut(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                snake.dX = -23 ;
+                snake.dY = 0;
+                break;
+            case 38:
+                snake.dX = 0;
+                snake.dY = -23;
+                break;
+            case 39:
+                snake.dX = 23 ;
+                snake.dY = 0;
+                break;
+            case 40:
+                snake.dX = 0;
+                snake.dY = 23;
+                break;
+        }
+    }
+
+
+    let snake = new Snake();
+    let apple = new Apple();
+
+
+    function gameInit() {
+        snake.huongDiChuyen();
+
+        if (snake.toaDoRan.x < 0) {
+            alert("Game over");
+            clearInterval(game);
+        }
+        if (snake.toaDoRan.x >= canvas.width) {
+            alert("Game over");
+            clearInterval(game);
+        }
+        if (snake.toaDoRan.y < 0) {
+            alert("Game over");
+            clearInterval(game);
+        }
+        if (snake.toaDoRan.y >= canvas.height) {
+            alert("Game over");
+            clearInterval(game);
+        }
+        snake.eat(apple);
+        snake.veRan();
+    }
+
+    function gameInit(){
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+
+
+
+    }
+    // if (this.toaDoRan.x == apple.toaDoBanDau.x && this.toaDoRan.y == apple.toaDoBanDau.y){
+    //     this.doDaiBodyBanDau +=1;
+    //
+    //     apple.toaDoBanDau.x = (Math.floor(Math.random() * grid)) * 23;
+    //     apple.toaDoBanDau.y = (Math.floor(Math.random() * grid)) * 23;
+
+
+    let game = setInterval(gameInit,1000/8);
+gameInit();
 
 </script>
 </body>
