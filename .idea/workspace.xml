@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/theo-file-medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/theo-file-medium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snake game/snake.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snake game/theo-file-medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Snake game/theo-file-medium.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,6 +142,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="979" y="182" key="#chuyen-doi-tien-te.js/0.0.1920.1040@0.0.1920.1040" timestamp="1593527071536" />
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1595305988286">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1595305988286" />
     <state x="472" y="66" key="#dung-1-ham.js" timestamp="1593573991865">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

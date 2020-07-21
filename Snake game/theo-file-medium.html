@@ -14,7 +14,6 @@
 
     let Snake = function () {
         this.grid = 23;                                     //snake width;
-        this.doDaiBodyBanDau = 3;                            //do dai ban dai = 3 grid.
         this.toaDoThan = [];
         this.toaDoDauRan = {x:230 , y:230};                // = toa do dau ran.
         this.dX = 23;                                   //di chuyen dau game.
@@ -36,25 +35,25 @@
                 this.toaDoThan[i].x = this.toaDoThan[i - 1].x;
                 this.toaDoThan[i].y = this.toaDoThan[i - 1].y;
             }
-            for (let i = 0; i < this.toaDoThan.length; i++) {               //ve luon ran
+            for (let i = 2; i < this.toaDoThan.length; i++) {               //ve luon ran
                 ctx.beginPath();
                 ctx.rect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
                 ctx.stroke();
             }
         }
         this.dauChamThan = function () {
-            for (let i = 2; i < this.toaDoThan.length; i++) {
-                if (this.toaDoThan[0].x == this.toaDoThan[i].x && this.toaDoThan[0].y == this.toaDoThan[i].y) {
+            for (let i=1; i <this.toaDoThan.length ; i++) {
+                if (this.toaDoThan[0].x === this.toaDoThan[i].x && this.toaDoThan[0].y === this.toaDoThan[i].y) {
                     clearInterval(game);
                     alert("Game over");
                 }
             }
         }
-         this.eat = function (apple) {
+         this.an = function (apple) {
             if (this.toaDoThan[0].x === apple.x && this.toaDoThan[0].y === apple.y){
                 this.toaDoThan.push({x:apple.x, y:apple.y});
-                apple.x = ((Math.floor(Math.random() * 23)) + 1)* 23;
-                apple.y = ((Math.floor(Math.random() * 23)) + 1)* 23;
+                apple.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
+                apple.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
                 apple.veFood();
             }
          }
@@ -64,24 +63,19 @@
     snake.toaDoThan[0] = snake.toaDoDauRan;
 
 
-
     let Food = function () {
         this.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
         this.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
         this.veFood = function () {
-
             ctx.beginPath();
             ctx.fillStyle = "yellow";
-            ctx.fillRect(this.x,this.y,23,23);
+            ctx.rect(this.x,this.y,23,23);
             ctx.stroke();
+            ctx.fill();
         }
     }
 
-
     let apple = new Food();
-
-
-
 
     function huongRanDiChuyenTheoNut(evt) {
         switch (evt.keyCode) {
@@ -119,11 +113,10 @@
         ctx.clearRect(0,0,canvas.width,canvas.height);
         snake.veRan();
         apple.veFood();
-        snake.eat(apple);
+        snake.an(apple);
         snake.diChuyenToaDoThan();
         damVaoTuong();
         snake.dauChamThan();
-
 
     }
 
