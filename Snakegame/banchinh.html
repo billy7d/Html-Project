@@ -6,15 +6,22 @@
     <link rel="stylesheet" href="snake.css">
 </head>
 <body>
+
+<div>Level: <label id="level"></label><br><br>
+Score: <label id="score"></label></div>
+
+
 <canvas id="canvas" width="529" height="529" style="border: 1px solid #a9a9a9"></canvas>
-<div>Score: <label id="score"></label></div>
+
 <script>
     let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
     window.addEventListener("keydown",huongRanDiChuyenTheoNut);
     let score = 0;
     let fakeScore = 0;
+    let level = 1;
     let frame = 9
+
 
     let Snake = function () {
         this.grid = 23;                                     // = snake width
@@ -110,19 +117,21 @@
 
     function gameScore() {
         document.getElementById("score").innerHTML = score;
+    }
 
+    function gameLevel() {
+        document.getElementById("level").innerHTML = level;
     }
 
     function changeSpeed() {
         if (fakeScore>=5){
-            frame +=10;
+            frame +=7;
+            level++;
             fakeScore =0;
             clearInterval(game);
             game = setInterval(loop,1000/frame);
         }
     }
-console.log(frame);
-
 
     function loop() {
         ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -134,6 +143,7 @@ console.log(frame);
         damVaoTuong();
         gameScore();
         changeSpeed();
+        gameLevel();
     }
 
 let game = setInterval(loop,1000/frame);
