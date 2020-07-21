@@ -14,58 +14,74 @@
 
     let Snake = function () {
         this.grid = 23;                                     //snake width;
-        this.doDaiBodyBanDau = 3;                            //do dai ban dai = 4 grid.
+        this.doDaiBodyBanDau = 3;                            //do dai ban dai = 3 grid.
         this.toaDoThan = [];
-        this.toaDoDauRan = [{x:230 , y:230}];                // = toa do dau ran.
+        this.toaDoDauRan = {x:230 , y:230};                // = toa do dau ran.
         this.dX = 23;                                   //di chuyen dau game.
         this.dY = 0;
 
         this.huongDiChuyen = function () {
-            this.toaDoDauRan.x += this.dX;
-            this.toaDoDauRan.y += this.dY;
+            this.toaDoThan[0].x += this.dX;
+            this.toaDoThan[0].y += this.dY;
         }
 
         this.veRan = function () {
-                //set toaDoThan
-            // ctx.clearRect(0,0,canvas.width,canvas.height);
-            // this.toaDoRan.x += this.dX;
-            // this.toaDoRan.y +=this.dY;
-
-                ctx.beginPath();
-                ctx.fillStyle='black';
-                ctx.rect(this.toaDoDauRan.x, this.toaDoDauRan.y, this.grid, this.grid);
-                ctx.stroke();
+            ctx.beginPath();
+            ctx.fillStyle='black';
+            ctx.rect(this.toaDoDauRan.x, this.toaDoDauRan.y, this.grid, this.grid);
+            ctx.stroke();
             }
-        }
         this.diChuyenToaDoThan = function () {
-            for (let i = this.toaDoThan.length - 1; i >= 0; i++) {
-                ctx.beginPath();
+            for (let i = this.toaDoThan.length - 1; i > 0; i--) {
                 this.toaDoThan[i].x = this.toaDoThan[i - 1].x;
                 this.toaDoThan[i].y = this.toaDoThan[i - 1].y;
             }
-            for (let i = 0; i < this.toaDoThan.length; i++) {
+            for (let i = 0; i < this.toaDoThan.length; i++) {               //ve luon ran
+                ctx.beginPath();
                 ctx.rect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
                 ctx.stroke();
             }
+        }
         this.dauChamThan = function () {
-            for (i = 1; i < this.toaDoThan.length; i++) {
-                if (this.toaDoDauRan.x == this.toaDoThan[i].x  && this.toaDoDauRan.y == this.toaDoThan[i].y) {
-                alert("Game over");
+            for (let i = 2; i < this.toaDoThan.length; i++) {
+                if (this.toaDoThan[0].x == this.toaDoThan[i].x && this.toaDoThan[0].y == this.toaDoThan[i].y) {
+                    clearInterval(game);
+                    alert("Game over");
                 }
             }
+        }
+         this.eat = function (apple) {
+            if (this.toaDoThan[0].x === apple.x && this.toaDoThan[0].y === apple.y){
+                this.toaDoThan.push({x:apple.x, y:apple.y});
+                apple.x = ((Math.floor(Math.random() * 23)) + 1)* 23;
+                apple.y = ((Math.floor(Math.random() * 23)) + 1)* 23;
+                apple.veFood();
+            }
+         }
+    }
+
+    let snake = new Snake();
+    snake.toaDoThan[0] = snake.toaDoDauRan;
 
 
+
+    let Food = function () {
+        this.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
+        this.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
+        this.veFood = function () {
+
+            ctx.beginPath();
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(this.x,this.y,23,23);
+            ctx.stroke();
         }
     }
 
 
+    let apple = new Food();
 
 
 
-    let Apple = function () {
-        this.x = (Math.floor(Math.random() * grid)) * 23;
-        this.y = (Math.floor(Math.random() * grid)) * 23;
-    }
 
     function huongRanDiChuyenTheoNut(evt) {
         switch (evt.keyCode) {
@@ -88,48 +104,30 @@
         }
     }
 
-
-    let snake = new Snake();
-
-
-    //
-    // function gameInit() {
-    //     snake.huongDiChuyen();
-    //
-    //     if (snake.toaDoRan.x < 0) {
-    //         alert("Game over");
-    //         clearInterval(game);
-    //     }
-    //     if (snake.toaDoRan.x >= canvas.width) {
-    //         alert("Game over");
-    //         clearInterval(game);
-    //     }
-    //     if (snake.toaDoRan.y < 0) {
-    //         alert("Game over");
-    //         clearInterval(game);
-    //     }
-    //     if (snake.toaDoRan.y >= canvas.height) {
-    //         alert("Game over");
-    //         clearInterval(game);
-    //     }
-    //     snake.eat(apple);
-    //     snake.veRan();
-    // }
-    //
-    // function gameInit(){
-    //     ctx.clearRect(0,0,canvas.width,canvas.height);
+    function damVaoTuong() {
+        if (snake.toaDoThan[0].x <0 || snake.toaDoThan[0].x >= canvas.width
+            || snake.toaDoThan[0].y < 0 || snake.toaDoThan[0].y >= canvas.height){
+                clearInterval(game);
+                alert("Game over");
+        }
+    }
 
 
 
+    function loop() {
+        snake.huongDiChuyen();
+        ctx.clearRect(0,0,canvas.width,canvas.height);
+        snake.veRan();
+        apple.veFood();
+        snake.eat(apple);
+        snake.diChuyenToaDoThan();
+        damVaoTuong();
+        snake.dauChamThan();
 
-    // if (this.toaDoRan.x == apple.toaDoBanDau.x && this.toaDoRan.y == apple.toaDoBanDau.y){
-    //     this.doDaiBodyBanDau +=1;
-    //
 
+    }
 
-
-    // let game = setInterval(gameInit,1000/8);
-gameInit();
+let game = setInterval(loop,1000/8);
 
 </script>
 </body>
