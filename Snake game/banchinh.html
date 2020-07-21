@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="snake.css">
 </head>
 <body>
-<canvas id="canvas" width="529" height="529" style="border: 1px solid black"></canvas>
-
+<canvas id="canvas" width="529" height="529" style="border: 1px solid"></canvas>
+<div>Score: <label id="score"></label></div>
 <script>
     let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
     window.addEventListener("keydown",huongRanDiChuyenTheoNut);
+    let score = 0;
 
     let Snake = function () {
         this.grid = 23;                                     //snake width;
@@ -24,9 +26,10 @@
             this.toaDoThan[0].y += this.dY;
         }
 
-        this.veRan = function () {
+        this.veRanBanDau = function () {
             ctx.beginPath();
-            ctx.fillStyle='black';
+            ctx.fillStyle='#0194de';
+            ctx.fillRect(this.toaDoDauRan.x, this.toaDoDauRan.y, this.grid, this.grid);
             ctx.rect(this.toaDoDauRan.x, this.toaDoDauRan.y, this.grid, this.grid);
             ctx.stroke();
             }
@@ -35,14 +38,16 @@
                 this.toaDoThan[i].x = this.toaDoThan[i - 1].x;
                 this.toaDoThan[i].y = this.toaDoThan[i - 1].y;
             }
-            for (let i = 2; i < this.toaDoThan.length; i++) {               //ve luon ran
+            for (let i = 1; i < this.toaDoThan.length; i++) {               //ve luon ran
                 ctx.beginPath();
+                ctx.fillStyle='#0194de';
+                ctx.fillRect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
                 ctx.rect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
                 ctx.stroke();
             }
         }
         this.dauChamThan = function () {
-            for (let i=1; i <this.toaDoThan.length ; i++) {
+            for (let i= 2; i <this.toaDoThan.length ; i++) {
                 if (this.toaDoThan[0].x === this.toaDoThan[i].x && this.toaDoThan[0].y === this.toaDoThan[i].y) {
                     clearInterval(game);
                     alert("Game over");
@@ -55,6 +60,7 @@
                 apple.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
                 apple.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
                 apple.veFood();
+                score++;
             }
          }
     }
@@ -106,21 +112,25 @@
         }
     }
 
+    function gameScore() {
+        document.getElementById("score").innerHTML = score;
+    }
+
 
 
     function loop() {
         snake.huongDiChuyen();
         ctx.clearRect(0,0,canvas.width,canvas.height);
-        snake.veRan();
+        snake.veRanBanDau();
         apple.veFood();
         snake.an(apple);
         snake.diChuyenToaDoThan();
-        damVaoTuong();
         snake.dauChamThan();
-
+        damVaoTuong();
+        gameScore();
     }
 
-let game = setInterval(loop,1000/8);
+let game = setInterval(loop,1000/9);
 
 </script>
 </body>

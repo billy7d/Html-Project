@@ -20,9 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Snake game/snake.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake game/snake.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake game/theo-file-medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Snake game/theo-file-medium.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Snake game/theo-file-medium.html" beforeDir="false" afterPath="$PROJECT_DIR$/Snake game/banchinh.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,9 +32,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -119,6 +119,7 @@
       <workItem from="1595211099634" duration="7880000" />
       <workItem from="1595226481450" duration="10972000" />
       <workItem from="1595239731481" duration="1098000" />
+      <workItem from="1595313322914" duration="4650000" />
     </task>
     <servers />
   </component>
