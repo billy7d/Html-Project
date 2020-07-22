@@ -1,4 +1,6 @@
+@font-face { font-family: "8BITWONDERNominal"; src: url('Font/8-BIT WONDER.ttf'); }
 canvas{
+
     background-color: #a9a9a9;
     border: black;
     margin-top: 5px;
@@ -7,8 +9,11 @@ canvas{
 div{
    float: right;
     margin-top: 15px;
-    margin-right:580px;
-    font-size: 26px;
-    font-family: "Lucida Console", Courier, monospace;
+    margin-right:600px;
+    font-family: '8BITWONDERNominal';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 15px;
 }
+
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="snake.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/8bit-wonder" type="text/css"/>
 </head>
 <body>
 
@@ -26,6 +27,8 @@
     let gameOver = false;
     let confirmG = true;
 
+    let feedSound  = new Audio("Sound/feed.wav");
+    let crashSound = new Audio("Sound/crash.wav");
 
     let Snake = function () {
         this.grid = 23;
@@ -58,6 +61,7 @@
                 if (this.toaDoThan[0].x === this.toaDoThan[i].x && this.toaDoThan[0].y === this.toaDoThan[i].y) {
                     clearInterval(game);
                     gameOver = true;
+                    crashSound.play();
                     replay();
                 }
             }
@@ -70,6 +74,7 @@
                 apple.veFood();
                 score+= 100;
                 fakeScore++;            //score ko hien thi
+                feedSound.play();
             }
         }
     }
@@ -89,10 +94,22 @@
             ctx.rect(this.x,this.y,23,23);
             ctx.stroke();
 
+
         }
     }
 
     let apple = new Food();
+
+
+    function damVaoTuong() {
+        if (snake.toaDoThan[0].x <0 || snake.toaDoThan[0].x >= canvas.width
+            || snake.toaDoThan[0].y < 0 || snake.toaDoThan[0].y >= canvas.height){
+            clearInterval(game);
+            gameOver = true;
+            crashSound.play();
+            replay();
+        }
+    }
 
     function huongRanDiChuyenTheoNut(evt) {
         switch (evt.keyCode) {
@@ -112,15 +129,6 @@
                 snake.dX = 0;
                 snake.dY = 23;
                 break;
-        }
-    }
-
-    function damVaoTuong() {
-        if (snake.toaDoThan[0].x <0 || snake.toaDoThan[0].x >= canvas.width
-            || snake.toaDoThan[0].y < 0 || snake.toaDoThan[0].y >= canvas.height){
-            clearInterval(game);
-            gameOver = true;
-            replay();
         }
     }
 
@@ -149,6 +157,15 @@
             window.location.reload();
         }
     }
+    function textInsideCanvas() {
+        if (gameOver == true){
+            ctx.fillStyle = "black";
+            ctx.font ="23px 8BITWONDERNominal";
+            ctx.fillText("GAME OVER",230,240);
+
+
+        }
+    }
 
     function loop() {
         ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -161,6 +178,7 @@
         gameScore();
         changeSpeed();
         gameLevel();
+        textInsideCanvas();
     }
 
     let game = setInterval(loop,1000/frame);
