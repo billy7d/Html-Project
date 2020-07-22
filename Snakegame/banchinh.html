@@ -8,38 +8,43 @@
 <body>
 
 <div>Level: <label id="level"></label><br><br>
-Score: <label id="score"></label></div>
+    Score: <label id="score"></label></div>
 
 
-<canvas id="canvas" width="529" height="529" style="border: 1px solid #a9a9a9"></canvas>
+<canvas id="canvas" width="529" height="529" style="border: 1px #a9a9a9"></canvas>
 
 <script>
+
+    window.addEventListener("keydown",huongRanDiChuyenTheoNut);
+
     let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
-    window.addEventListener("keydown",huongRanDiChuyenTheoNut);
     let score = 0;
     let fakeScore = 0;
     let level = 1;
-    let frame = 9
+    let frame = 9;
+    let gameOver = false;
+    let confirmG = true;
 
 
     let Snake = function () {
-        this.grid = 23;                                     // = snake width
+        this.grid = 23;
         this.toaDoThan = [];
-        this.toaDoDauRan = {x:230 , y:230};
+        this.toaDoDauRan = {x:230 , y:230}; //tdo ban dau.
         this.dX = 23;
         this.dY = 0;
 
         this.diChuyenToaDoThan = function () {
             for (let i = this.toaDoThan.length - 1; i > 0; i--) {
-                this.toaDoThan[i].x = this.toaDoThan[i - 1].x;              //dchuyen tdo than
+                this.toaDoThan[i].x = this.toaDoThan[i - 1].x;
                 this.toaDoThan[i].y = this.toaDoThan[i - 1].y;
             }
-            this.toaDoThan[0].x += this.dX;                             //dchuyen tdo dau
+            this.toaDoThan[0].x += this.dX; //dchuyen tdo dau
             this.toaDoThan[0].y += this.dY;
         }
+
         this.veRan = function () {
-            for (let i = 0; i < this.toaDoThan.length; i++) {               //ve ran
+            for (let i = 0; i < this.toaDoThan.length; i++) {
                 ctx.beginPath();
                 ctx.fillStyle = '#0194de';
                 ctx.fillRect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
@@ -49,23 +54,24 @@ Score: <label id="score"></label></div>
         }
 
         this.dauChamThan = function () {
-            for (let i= 2; i <this.toaDoThan.length ; i++) {
+            for (let i= 1; i <this.toaDoThan.length ; i++) {
                 if (this.toaDoThan[0].x === this.toaDoThan[i].x && this.toaDoThan[0].y === this.toaDoThan[i].y) {
                     clearInterval(game);
-                    alert("Game over");
+                    gameOver = true;
+                    replay();
                 }
             }
         }
-         this.an = function (apple) {
+        this.an = function (apple) {
             if (this.toaDoThan[0].x === apple.x && this.toaDoThan[0].y === apple.y){
                 this.toaDoThan.push({x:apple.x, y:apple.y});
                 apple.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
                 apple.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
                 apple.veFood();
                 score++;
-                fakeScore++;
+                fakeScore++;            //score ko hien thi
             }
-         }
+        }
     }
 
     let snake = new Snake();
@@ -110,8 +116,20 @@ Score: <label id="score"></label></div>
     function damVaoTuong() {
         if (snake.toaDoThan[0].x <0 || snake.toaDoThan[0].x >= canvas.width
             || snake.toaDoThan[0].y < 0 || snake.toaDoThan[0].y >= canvas.height){
-                clearInterval(game);
-                alert("Game over");
+            clearInterval(game);
+            gameOver = true;
+            replay();
+        }
+    }
+
+
+    function changeSpeed() {
+        if (fakeScore>=5){
+            frame +=7;
+            level++;
+            fakeScore =0;
+            clearInterval(game);
+            game = setInterval(loop,1000/frame);
         }
     }
 
@@ -123,13 +141,10 @@ Score: <label id="score"></label></div>
         document.getElementById("level").innerHTML = level;
     }
 
-    function changeSpeed() {
-        if (fakeScore>=5){
-            frame +=7;
-            level++;
-            fakeScore =0;
-            clearInterval(game);
-            game = setInterval(loop,1000/frame);
+    function replay() {
+        confirmG = confirm("Mới có level " + level + " làm game nữa đi");
+        if (gameOver == true && confirmG == true) {
+            window.location.reload();
         }
     }
 
@@ -146,7 +161,7 @@ Score: <label id="score"></label></div>
         gameLevel();
     }
 
-let game = setInterval(loop,1000/frame);
+    let game = setInterval(loop,1000/frame);
 
 </script>
 </body>
