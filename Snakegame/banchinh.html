@@ -11,12 +11,14 @@
 Score: <label id="score"></label></div>
 
 
-<canvas id="canvas" width="529" height="529" style="border: 1px solid #a9a9a9"></canvas>
+<canvas id="canvas"  width="529" height="529" style="border: 1px #a9a9a9"></canvas>
 
 <script>
+
+    window.addEventListener("keydown",huongRanDiChuyenTheoNut);
+
     let canvas = document.getElementById("canvas");
     let ctx = canvas.getContext("2d");
-    window.addEventListener("keydown",huongRanDiChuyenTheoNut);
     let score = 0;
     let fakeScore = 0;
     let level = 1;
@@ -24,22 +26,23 @@ Score: <label id="score"></label></div>
 
 
     let Snake = function () {
-        this.grid = 23;                                     // = snake width
+        this.grid = 23;
         this.toaDoThan = [];
-        this.toaDoDauRan = {x:230 , y:230};
+        this.toaDoDauRan = {x:230 , y:230};             //tdo ban dau.
         this.dX = 23;
         this.dY = 0;
 
         this.diChuyenToaDoThan = function () {
             for (let i = this.toaDoThan.length - 1; i > 0; i--) {
-                this.toaDoThan[i].x = this.toaDoThan[i - 1].x;              //dchuyen tdo than
+                this.toaDoThan[i].x = this.toaDoThan[i - 1].x;
                 this.toaDoThan[i].y = this.toaDoThan[i - 1].y;
             }
-            this.toaDoThan[0].x += this.dX;                             //dchuyen tdo dau
-            this.toaDoThan[0].y += this.dY;
+                this.toaDoThan[0].x += this.dX;                                 //dchuyen tdo dau
+                this.toaDoThan[0].y += this.dY;
         }
+
         this.veRan = function () {
-            for (let i = 0; i < this.toaDoThan.length; i++) {               //ve ran
+            for (let i = 0; i < this.toaDoThan.length; i++) {
                 ctx.beginPath();
                 ctx.fillStyle = '#0194de';
                 ctx.fillRect(this.toaDoThan[i].x, this.toaDoThan[i].y, this.grid, this.grid);
@@ -49,7 +52,7 @@ Score: <label id="score"></label></div>
         }
 
         this.dauChamThan = function () {
-            for (let i= 2; i <this.toaDoThan.length ; i++) {
+            for (let i= 1; i <this.toaDoThan.length ; i++) {
                 if (this.toaDoThan[0].x === this.toaDoThan[i].x && this.toaDoThan[0].y === this.toaDoThan[i].y) {
                     clearInterval(game);
                     alert("Game over");
@@ -63,7 +66,7 @@ Score: <label id="score"></label></div>
                 apple.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
                 apple.veFood();
                 score++;
-                fakeScore++;
+                fakeScore++;                                            //score ko hien thi
             }
          }
     }
@@ -115,13 +118,6 @@ Score: <label id="score"></label></div>
         }
     }
 
-    function gameScore() {
-        document.getElementById("score").innerHTML = score;
-    }
-
-    function gameLevel() {
-        document.getElementById("level").innerHTML = level;
-    }
 
     function changeSpeed() {
         if (fakeScore>=5){
@@ -133,6 +129,13 @@ Score: <label id="score"></label></div>
         }
     }
 
+    function gameScore() {
+        document.getElementById("score").innerHTML = score;
+    }
+
+    function gameLevel() {
+        document.getElementById("level").innerHTML = level;
+    }
 
     function loop() {
         ctx.clearRect(0,0,canvas.width,canvas.height);
@@ -145,7 +148,6 @@ Score: <label id="score"></label></div>
         gameScore();
         changeSpeed();
         gameLevel();
-
     }
 
 let game = setInterval(loop,1000/frame);
