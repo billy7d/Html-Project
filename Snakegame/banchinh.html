@@ -11,7 +11,7 @@
     Score: <label id="score"></label></div>
 
 
-<canvas id="canvas" width="529" height="529" style="border: 1px #a9a9a9"></canvas>
+<canvas id="canvas" width="529" height="529" style="border: 1px black"></canvas>
 
 <script>
 
@@ -65,10 +65,10 @@
         this.an = function (apple) {
             if (this.toaDoThan[0].x === apple.x && this.toaDoThan[0].y === apple.y){
                 this.toaDoThan.push({x:apple.x, y:apple.y});
-                apple.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
-                apple.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
+                apple.x = ((Math.floor(Math.random() * 21)) + 1)* 23;
+                apple.y = ((Math.floor(Math.random() * 21)) + 1)* 23;
                 apple.veFood();
-                score++;
+                score+= 100;
                 fakeScore++;            //score ko hien thi
             }
         }
@@ -79,14 +79,16 @@
 
 
     let Food = function () {
-        this.x = ((Math.floor(Math.random() * 20)) + 1)* 23;
-        this.y = ((Math.floor(Math.random() * 20)) + 1)* 23;
+        this.x = ((Math.floor(Math.random() * 21)) + 1)* 23;
+        this.y = ((Math.floor(Math.random() * 21)) + 1)* 23;
+
         this.veFood = function () {
             ctx.beginPath();
             ctx.fillStyle = "yellow";
+            ctx.fillRect(this.x,this.y,23,23);
             ctx.rect(this.x,this.y,23,23);
             ctx.stroke();
-            ctx.fill();
+
         }
     }
 

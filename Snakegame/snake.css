@@ -1,13 +1,13 @@
 canvas{
     background-color: #a9a9a9;
-    border: #a9a9a9;
+    border: black;
     margin-top: 5px;
     margin-left: 5px;
 }
 div{
    float: right;
     margin-top: 15px;
-    margin-right:630px;
+    margin-right:580px;
     font-size: 26px;
     font-family: "Lucida Console", Courier, monospace;
 }
