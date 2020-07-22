@@ -133,6 +133,7 @@ Score: <label id="score"></label></div>
         }
     }
 
+
     function loop() {
         ctx.clearRect(0,0,canvas.width,canvas.height);
         apple.veFood();
@@ -144,6 +145,7 @@ Score: <label id="score"></label></div>
         gameScore();
         changeSpeed();
         gameLevel();
+
     }
 
 let game = setInterval(loop,1000/frame);
