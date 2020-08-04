@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+let diemThi = [4,5,6,8,10];
+let diemCaoNhat;
+function findMax(diemThi) {
+    diemCaoNhat = diemThi[0];
+    for (let i = 1; i < diemThi.length; i++) {
+        if (diemThi[i] > diemCaoNhat) {
+            diemCaoNhat = diemThi[i];
+        }
+    }return diemCaoNhat;
+}
+alert(findMax(diemThi));
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

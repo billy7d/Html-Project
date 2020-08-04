@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let firstNumb = 0;
+    let secondNumb = 1;
+    let secondNumbToFirst = 0;
+
+    function isFibonacci(numb) {
+        let i = 0;
+        while(i <= numb){
+            secondNumbToFirst = secondNumb;
+            secondNumb = firstNumb + secondNumb;
+            firstNumb = secondNumbToFirst;
+
+            if (numb === 0 || numb === secondNumb){
+                return true;
+            }
+        i++;
+        }
+        return false;
+    }
+
+    document.write(isFibonacci(88));
+
+</script>
+
+</body>
+</html>

@@ -20,24 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="763e7450-1d94-48ee-bac7-d5cf53b81d53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/thuc-hanh-test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuc-hanh-cau-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuc-hanh-cau-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuc-hanh-cau-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuc-hanh-cau-4.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake/case-study/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Snake/case-study/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snake/case-study/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Snake/case-study/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/.idea/Snake game.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/Font/8-BIT WONDER.TTF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/Font/8-BIT WONDER.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/Font/8bit-wonder.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/Font/README.TXT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/Sound/crash.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/Sound/feed.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Snakegame/snake.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuc-hanh-test.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +42,8 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Snake/case-study" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectId" id="1dzuFrxnXmVAcxIPPxqHRIB9eOv" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaProject" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -83,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Html-Project\Week 4" />
       <recent name="D:\Html-Project\Week 1,2" />
       <recent name="D:\Html-Project\Week 1,2\[Bài tập] Game puzzle" />
     </key>
@@ -139,7 +129,11 @@
       <workItem from="1595395700098" duration="345000" />
       <workItem from="1595400003769" duration="785000" />
       <workItem from="1595401460752" duration="7996000" />
-      <workItem from="1595554296978" duration="4657000" />
+      <workItem from="1595554296978" duration="5092000" />
+      <workItem from="1595560818389" duration="5221000" />
+      <workItem from="1595573158576" duration="370000" />
+      <workItem from="1595575762231" duration="7065000" />
+      <workItem from="1595948432106" duration="146000" />
     </task>
     <servers />
   </component>
@@ -167,10 +161,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="472" y="66" key="#dung-1-ham.js/0.0.1536.824@0.0.1536.824" timestamp="1593573991865" />
-    <state x="838" y="202" key="FileChooserDialogImpl" timestamp="1595413415080">
+    <state x="838" y="202" key="FileChooserDialogImpl" timestamp="1595948578131">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595413415080" />
+    <state x="838" y="202" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1595948578131" />
     <state x="1047" y="255" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594045987352" />
     <state width="1515" height="261" key="GridCell.Tab.0.bottom" timestamp="1593579356090">
       <screen x="0" y="0" width="1536" height="824" />
@@ -250,10 +244,10 @@
     </state>
     <state x="540" y="113" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594775600861" />
     <state x="922" y="168" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1595249343380" />
-    <state x="-7" y="0" width="919" height="1047" key="dock-window-1" timestamp="1595340471105">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="6" y="18" width="646" height="808" key="dock-window-1" timestamp="1595577486822">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="0" y="0" width="812" height="802" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1594866304677" />
+    <state x="6" y="18" width="646" height="808" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1595577486822" />
     <state x="-7" y="0" width="919" height="1047" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1595340471105" />
     <state x="-5" y="0" width="634" height="808" key="dock-window-2" timestamp="1594866304677">
       <screen x="0" y="0" width="1536" height="824" />
@@ -273,9 +267,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="22" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1594863636788" />
-    <state x="690" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1594612584946">
+    <state x="690" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1595579746147">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="690" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1594612584946" />
+    <state x="690" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1595579746147" />
   </component>
 </project>

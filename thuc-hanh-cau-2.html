@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    let arr =[1,3,6,6,6,6,4,6,8,6,2,7,8,6];
+
+    function tryRemoveFromArrray(x) {
+        for (let i=0; i<arr.length;i++){
+            if (arr[i] === x){
+                arr.splice(i,1);
+                i--;
+            }
+
+        } return arr;
+    }
+    tryRemoveFromArrray(parseInt(prompt("Nhập vào 1 số kiểm tra")));
+    document.write(arr);
+
+
+</script>
+
+</body>
+</html>
